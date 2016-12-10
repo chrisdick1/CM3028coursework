@@ -1,8 +1,8 @@
 <?php
 require_once("../includes/db_connection.php");
-echo "test";
+
 $id = $_GET['id'];
-echo "test1";
+
 $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs WHERE clubid = $id";
 $result = $connection->query($sql);?>
 
