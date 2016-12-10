@@ -1,4 +1,5 @@
 <?php
+require_once("../includes/db_connection.php");
 $id = $_GET['id'];
 
 $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs WHERE clubid = $id";
