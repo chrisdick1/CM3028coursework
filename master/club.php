@@ -24,7 +24,7 @@ $result = $connection->query($sql);?>
                 <p>Club Description: <?php echo $clubdescription ?></p>
                 <p>Club Genre: <?php echo $clubgenre ?></p>
                 <p>Club Contact Information: <?php echo $clubcontact ?></p>
-                <?php echo "<a href = '/master/club.php?id=$clubid'>Visit Club Page</a>" ?>
+                <?php echo "<a href = '/master/club.php?id=$clubid'>DINOSAURS</a>" ?>
 
 
             </div>
