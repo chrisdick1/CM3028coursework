@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
         <p>Club Description: <?php echo $clubdescription ?></p>
         <p>Club Genre: <?php echo $clubgenre ?></p>
         <p>Club Contact Information: <?php echo $clubcontact ?></p>
-            <?php echo "<a href = '/photoProfile.php?id=$clubid'>Visit Club Page</a>" ?>
+            <?php echo "<a href = '/master/club.php?id=$clubid'>Visit Club Page</a>" ?>
 
 
         </div>
@@ -33,4 +33,4 @@ if ($result->num_rows > 0) {
 }?>
 
 
-        <?php echo "<a href = '/club.php?id=$clubid'>Visit Club Page</a>" ?>
+
