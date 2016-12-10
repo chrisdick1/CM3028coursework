@@ -10,11 +10,11 @@ $result = $connection->query($sql);?>
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-       $clubid = row["clubid"];
-       $clubname = row["clubname"];
-       $clubdescription = row["clubdescription"];
-       $clubgenre = row["clubgenre"];
-       $clubcontact = row["clubcontact"];
+       $clubid = $row["clubid"];
+       $clubname = $row["clubname"];
+       $clubdescription = $row["clubdescription"];
+       $clubgenre = $row["clubgenre"];
+       $clubcontact = $row["clubcontact"];
 
        ?> <div class="jumbotron">
 
