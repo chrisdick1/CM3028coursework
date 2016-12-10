@@ -33,4 +33,4 @@ if ($result->num_rows > 0) {
 }?>
 
 
-        <?php echo "<a href = '/photoProfile.php?id=$clubid'>Visit Club Page</a>" ?>
+        <?php echo "<a href = '/club.php?id=$clubid'>Visit Club Page</a>" ?>
