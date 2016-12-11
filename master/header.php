@@ -60,11 +60,12 @@ session_start();
 
 
             if (isset($_SESSION['userSession'])) {
+
                 echo "<li><a href='/master/logout.php'>Logout</a></li>";
-               
 
            } else if($_SESSION['permissions'] == 2){
                 echo "<li><a href='/master/contributor.php'>Become Contributor</a></li>";
+                echo "<li><a href='/master/logout.php'>Logout</a></li>";
             }
             
             else{
