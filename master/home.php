@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'dbconnect.php';
+require_once("../includes/db_connection.php");
 
 if (!isset($_SESSION['userSession'])) {
     header("Location: index.php");
@@ -49,6 +49,10 @@ $connection->close();
     </div>
 </nav>
 
+<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
+    <a href="http://www.codingcage.com/">Coding Cage - Programming Blog</a><br /><br />
+    <p>Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and more...</p>
+</div>
 
 </body>
 </html>
