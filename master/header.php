@@ -52,11 +52,12 @@ session_start();
                 </form>
             </div>
             <?php
-            //if shopper
+           
             //if ($_SESSION['permissions'] == 1) {
                 echo"<li><a href='/master/clubPage.php'>Home</a></li>";
                 echo "<li><a href='/master/logout.php'>Clubs</a></li>";
                 echo "<li><a href='/master/Health.php'>Health</a></li>";
+                echo "<li><a href='/master/admin.php'>Admin</a></li>";
             
 
            if($_SESSION['permissions'] == 2){

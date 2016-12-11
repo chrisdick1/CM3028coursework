@@ -2,7 +2,7 @@
 session_start();
 require_once("../includes/db_connection.php");
 
-$id = $_SESSION['userSession'];
+$id =  $_POST["id"];
 //verify user to photographer
 $stmt = new mysqli_stmt ($connection, "UPDATE tbl_users SET permissions = 3 WHERE id = ?");
 if ($stmt) {
@@ -11,7 +11,7 @@ if ($stmt) {
 }
 
 $connection->close();
-header("Location: home.php");
+header("Location: admin.php");
 
 
 ?>
