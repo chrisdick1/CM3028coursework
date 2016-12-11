@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ("header.php");
 ?>
 <html lang="en">
@@ -7,7 +8,7 @@ include ("header.php");
 <br>
 <?php
 require_once("../includes/db_connection.php");
-
+echo $_SESSION["username"];
 
 $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs";
 $result = $connection->query($sql);?>
