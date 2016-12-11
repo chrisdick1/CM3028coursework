@@ -61,8 +61,13 @@ session_start();
 
             if (isset($_SESSION['userSession'])) {
                 echo "<li><a href='/master/logout.php'>Logout</a></li>";
+               
 
-           } else{
+           } else if($_SESSION['permissions'] == 2){
+                echo "<li><a href='/master/contributor.php'>Become Contributor</a></li>";
+            }
+            
+            else{
                 echo"<li><a href='/master/register.php'>Register</a></li>";
             }
 
