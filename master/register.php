@@ -1,5 +1,5 @@
 <?php
-include ("master/header.php");
+include ("header.php");
 ?>
 <head>
     <!-- Latest compiled and minified CSS -->

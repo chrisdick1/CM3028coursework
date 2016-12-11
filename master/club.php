@@ -1,6 +1,6 @@
 <?php
 require_once("../includes/db_connection.php");
-include ("master/header.php");
+include ("header.php");
 
 $id = $_GET['id'];
 
