@@ -72,13 +72,13 @@ $result = $connection->query($sql);?>
                     <div class="form-group">
 
                         <label for="usr">Event Name:</label>
-                        <input type="text" class="form-control" name="name" value="<?php echo $country; ?>">
+                        <input type="text" class="form-control" name="name" value="">
 
                         <label for="usr">Description:</label>
-                        <textarea class="form-control" name="description" rows="5" cols="80"><?php echo $description; ?></textarea>
+                        <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
 
                         <label for="usr">Date:</label>
-                        <input type="text" class="form-control" name="date" value="<?php echo $country; ?>">
+                        <input type="text" class="form-control" name="date" value="">
 
                     </div>
                 </div>
