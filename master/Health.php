@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+require_once("../includes/db_connection.php");
+?>
 <head>
     <title>Health</title>
     <meta charset="utf-8">
@@ -8,6 +10,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <!-- Trigger the modal with a button -->
+<body>
+<br>
+<div class="jumbotron">
+    <h2>Health and Wellingbeing<h2>
+            <p>Dinasours</p>
+
+</div>
+
+</body>
+
+
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
     Info
 </button>
