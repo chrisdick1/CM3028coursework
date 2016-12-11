@@ -5,11 +5,6 @@ require_once("../includes/db_connection.php");
 if (!isset($_SESSION['userSession'])) {
     header("Location: index.php");
 }
-
-$query = $connection->query("SELECT * FROM tbl_users WHERE user_id=".$_SESSION['userSession']);
-$userRow=$query->fetch_array();
-$connection->close();
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
