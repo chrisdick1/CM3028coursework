@@ -36,7 +36,7 @@ require_once("../includes/db_connection.php");
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Make News</h4>
             </div>
-            <form action="edit_user.php" method="post" enctype="multipart/form-data">
+            <form action="addEvent.php" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="form-group">
 
@@ -47,7 +47,7 @@ require_once("../includes/db_connection.php");
                         <textarea class="form-control" name="description" rows="5" cols="80"><?php echo $description; ?></textarea>
 
                         <label for="usr">Date:</label>
-                        <input type="text" class="form-control" name="country" value="<?php echo $country; ?>">
+                        <input type="text" class="form-control" name="date" value="<?php echo $country; ?>">
 
                     </div>
                 </div>
