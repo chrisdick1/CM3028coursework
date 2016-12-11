@@ -2,9 +2,9 @@
 session_start();
 
 if (!isset($_SESSION['userSession'])) {
-    header("Location: index.php");
+    header("Location: clubPage.php");
 } else if (isset($_SESSION['userSession'])!="") {
-    header("Location: home.php");
+    header("Location: clubPage.php");
 }
 
 if (isset($_GET['logout'])) {
