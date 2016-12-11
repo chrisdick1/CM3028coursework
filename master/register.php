@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['userSession'])!="") {
     header("Location: home.php");
 }
-require_once 'dbconnect.php';
+require_once("../includes/db_connection.php");
 
 if(isset($_POST['btn-signup'])) {
 
@@ -11,20 +11,20 @@ if(isset($_POST['btn-signup'])) {
     $email = strip_tags($_POST['email']);
     $upass = strip_tags($_POST['password']);
 
-    $uname = $DBcon->real_escape_string($uname);
-    $email = $DBcon->real_escape_string($email);
-    $upass = $DBcon->real_escape_string($upass);
+    $uname = $connection->real_escape_string($uname);
+    $email = $connection->real_escape_string($email);
+    $upass = $connection->real_escape_string($upass);
 
     $hashed_password = password_hash($upass, PASSWORD_DEFAULT);
 
-    $check_email = $DBcon->query("SELECT email FROM tbl_users WHERE email='$email'");
+    $check_email = $connection->query("SELECT email FROM tbl_users WHERE email='$email'");
     $count=$check_email->num_rows;
 
     if ($count==0) {
 
         $query = "INSERT INTO tbl_users(username,email,password) VALUES('$uname','$email','$hashed_password')";
 
-        if ($DBcon->query($query)) {
+        if ($connection->query($query)) {
             $msg = "<div class='alert alert-success'>
       <span class='glyphicon glyphicon-info-sign'></span> &nbsp; successfully registered !
      </div>";
@@ -43,7 +43,7 @@ if(isset($_POST['btn-signup'])) {
 
     }
 
-    $DBcon->close();
+    $connection->close();
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
