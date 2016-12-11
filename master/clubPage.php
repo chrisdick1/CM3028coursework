@@ -1,3 +1,6 @@
+<?php
+include ("master/header.php");
+?>
 <html lang="en">
 <head>
     <!-- Latest compiled and minified CSS -->
