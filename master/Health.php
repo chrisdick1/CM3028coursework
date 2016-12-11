@@ -50,7 +50,7 @@ $result = $connection->query($sql);?>
     }?>
 
 
-
+    <?php if ($_SESSION['permissions'] == 4){ ?>
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
     Info
@@ -92,5 +92,5 @@ $result = $connection->query($sql);?>
         </form>
     </div>
 </div>
-
+<?php } ?>
 </body>

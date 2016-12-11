@@ -19,7 +19,7 @@ if (isset($_POST['btn-login'])) {
     $email = $connection->real_escape_string($email);
     $password = $connection->real_escape_string($password);
 
-    $query = $connection->query("SELECT user_id, username, email, password FROM tbl_users WHERE email='$email'");
+    $query = $connection->query("SELECT user_id, username, email, password, permissions FROM tbl_users WHERE email='$email'");
     $row=$query->fetch_array();
 
     $count = $query->num_rows; // if email/password are correct returns must be 1 row
@@ -27,6 +27,7 @@ if (isset($_POST['btn-login'])) {
     if (password_verify($password, $row['password']) && $count==1) {
         $_SESSION['userSession'] = $row['user_id'];
         $_SESSION['username'] = $row['username'];
+        $_SESSION['permissions'] = $row['permissions'];
     
         header("Location: home.php");
     } else {
