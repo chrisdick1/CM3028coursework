@@ -11,6 +11,6 @@ if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['userSession']);
     unset($_SESSION['username']);
- 
-    header("Location: index.php");
+
+    header("Location: clubPage.php");
 }
