@@ -55,8 +55,11 @@ session_start();
             //if shopper
             //if ($_SESSION['permissions'] == 1) {
                 echo"<li><a href='/master/clubPage.php'>Home</a></li>";
-                echo"<li><a href='/master/register.php'>Register</a></li>";
-                echo "<li><a href='/master/logout.php'>Logout</a></li>";
+
+                echo "<li><a href='/master/logout.php'>Clubs</a></li>";
+                echo "<li><a href='/master/logout.php'>Health</a></li>";
+            echo"<li><a href='/master/register.php'>Register</a></li>";
+            echo "<li><a href='/master/logout.php'>Logout</a></li>";
 
            // }
 
