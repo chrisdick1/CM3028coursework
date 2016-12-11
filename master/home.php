@@ -21,12 +21,11 @@ require_once("../includes/db_connection.php");
 
 <body>
 <br>
-<?php
-require_once("../includes/db_connection.php");
+<div class="jumbotron">
+    <h2>Welcome To Go Portlethan<h2>
+            <p>You One Stop For All Your Portlethan Needs</p>
 
-
-?>
-
+</div>
 
 
 
