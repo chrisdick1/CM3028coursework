@@ -1,6 +1,7 @@
 <?php
 require_once("../includes/db_connection.php");
 include ("header.php");
+session_start();
 ?>
 <head>
     <title>Health</title>
