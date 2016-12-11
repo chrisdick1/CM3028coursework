@@ -5,9 +5,7 @@ include ("header.php");
 session_start();
 require_once("../includes/db_connection.php");
 
-if (!isset($_SESSION['userSession'])) {
-    header("Location: index.php");
-}
+
 ?>
 <?php
 require_once("../includes/db_connection.php");
