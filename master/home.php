@@ -6,9 +6,9 @@ if (!isset($_SESSION['userSession'])) {
     header("Location: index.php");
 }
 
-$query = $DBcon->query("SELECT * FROM tbl_users WHERE user_id=".$_SESSION['userSession']);
+$query = $connection->query("SELECT * FROM tbl_users WHERE user_id=".$_SESSION['userSession']);
 $userRow=$query->fetch_array();
-$DBcon->close();
+$connection->close();
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -49,10 +49,6 @@ $DBcon->close();
     </div>
 </nav>
 
-<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
-    <a href="http://www.codingcage.com/">Coding Cage - Programming Blog</a><br /><br />
-    <p>Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and more...</p>
-</div>
 
 </body>
 </html>
