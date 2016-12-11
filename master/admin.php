@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
         echo $row["username"] . "<br>";
 
         echo'<form action="verify.php" method="post">
-                    <input type="hidden" class="form-control" name="id" value=" '. $row["id"] .' ">
+                    <input type="hidden" class="form-control" name="id" value=" '. $row["user_id"] .' ">
                     <button type="submit" class="btn btn-default">Verify</button>
                 </form>';
 
