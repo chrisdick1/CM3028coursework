@@ -1,5 +1,6 @@
 <?php
 require_once("../includes/db_connection.php");
+include ("header.php");
 ?>
 <head>
     <title>Health</title>
@@ -9,6 +10,8 @@ require_once("../includes/db_connection.php");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
+
 <!-- Trigger the modal with a button -->
 <body>
 <br>
@@ -17,8 +20,36 @@ require_once("../includes/db_connection.php");
             <p>Dinasours</p>
 
 </div>
+<?php
+$sql = "SELECT eventName, description, date FROM health";
 
-</body>
+$result = $connection->query($sql);?>
+
+<div class="col-xs-12" id="images">
+
+    <?php
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            $eventName = $row["eventName"];
+            $description = $row["description"];
+            $date = $row["date"];
+
+            ?> <div class="jumbotron">
+
+                <p>Event: <?php echo $eventName ?></p>
+                <p><?php echo $description ?></p>
+                <p>Date <?php echo $date ?></p>
+
+
+            </div>
+            <?php
+        }
+    } else {
+        echo "0 results";
+    }?>
+
+
 
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
@@ -61,3 +92,5 @@ require_once("../includes/db_connection.php");
         </form>
     </div>
 </div>
+
+</body>
