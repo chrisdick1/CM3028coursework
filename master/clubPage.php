@@ -31,6 +31,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+<body>
 <br>
 <?php
 require_once("../includes/db_connection.php");
@@ -72,7 +74,7 @@ if ($result->num_rows > 0) {
 
 
 
-        <body>
+
 
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
