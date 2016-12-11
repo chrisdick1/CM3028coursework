@@ -56,9 +56,9 @@ session_start();
             //if ($_SESSION['permissions'] == 1) {
                 echo"<li><a href='/master/clubPage.php'>Home</a></li>";
                 echo "<li><a href='/master/logout.php'>Clubs</a></li>";
-                echo "<li><a href='/master/logout.php'>Health</a></li>";
+                echo "<li><a href='/master/Health.php'>Health</a></li>";
 
-            
+
             if (isset($_SESSION['userSession'])) {
                 echo "<li><a href='/master/logout.php'>Logout</a></li>";
 
