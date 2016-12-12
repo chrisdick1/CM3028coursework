@@ -22,7 +22,7 @@
 session_start();
 
 ?>
-<nav class="navbar navbar-default">
+<!--<nav class="navbar navbar-default">
     <!--<div class="container-fluid">
 
         <ul class="nav nav-justified">
