@@ -73,17 +73,19 @@ if (isset($_POST['btn-login'])) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h3 class="modal-title">Log In</h3>
-                    <?php
-                    if(isset($msg)){
-                        echo $msg;
-                    }
-                    ?>
+
 
                 </div>
 
                 <!-- body (form) -->
                 <div class="modal-body">
                     <form role="form">
+
+                        <?php
+                        if(isset($msg)){
+                            echo $msg;
+                        }
+                        ?>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" name="email" required />
                             <span id="check-e"></span>
