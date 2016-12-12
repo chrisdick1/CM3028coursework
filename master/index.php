@@ -60,7 +60,7 @@ if (isset($_POST['btn-login'])) {
 
 <div class="row">
     <div class="col-md-12">
-        <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
+        <img class="center-block img-responsive" src="http://placehold.it/1200x300" alt="">
     </div>
 </div>
 
