@@ -58,7 +58,7 @@ session_start();
                     echo"</ul>";
                     echo"<ul class='nav navbar-nav navbar-right'>";
                     if (!isset($_SESSION['userSession' ])) {
-                        echo "<li><a href='/master/logIn.php'>Log in</a></li>";
+                        echo "<li><iframe src=\"loginModal2.php\" /></li>";
                     }
                     echo"</ul>";
 
