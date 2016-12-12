@@ -38,7 +38,7 @@ if (isset($_POST['btn-login'])) {
     $connection->close();
 }
 ?>
-
+<html>
 <head>
     <title>Log In</title>
     <meta charset="utf-8">
