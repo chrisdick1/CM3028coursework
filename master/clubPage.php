@@ -15,7 +15,7 @@ $result = $connection->query($sql);?>
 
 
         <div class="col-lg-12">
-            <h2 class="page-header">Services Panels</h2>
+            <h2 class="page-header">Go Portlethan Clubs</h2>
         </div>
 
 
@@ -41,8 +41,8 @@ if ($result->num_rows > 0) {
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4><?php echo $clubname ?></h4>
+                        <p> <?php echo $clubdescription ?></p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
