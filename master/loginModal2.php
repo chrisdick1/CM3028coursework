@@ -96,7 +96,9 @@ if (isset($_POST['btn-login'])) {
                 </div>
 
                 <!-- button -->
-
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
 
             </div>
         </div>
