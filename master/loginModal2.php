@@ -61,6 +61,7 @@ if (isset($_POST['btn-login'])) {
 
     <h3>Log In Demo</h3>
 
+
     <!-- data-toggle lets you display modal without any JavaScript -->
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Open Modal</button>
 
@@ -72,6 +73,12 @@ if (isset($_POST['btn-login'])) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h3 class="modal-title">Log In</h3>
+                    <?php
+                    if(isset($msg)){
+                        echo $msg;
+                    }
+                    ?>
+
                 </div>
 
                 <!-- body (form) -->
