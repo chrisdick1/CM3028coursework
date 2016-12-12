@@ -78,18 +78,25 @@ if (isset($_POST['btn-login'])) {
                 <div class="modal-body">
                     <form role="form">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" name="email" required />
+                            <span id="check-e"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required/>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default" name="btn-login" id="btn-login">
+                                <span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In
+                            </button>
+
+                            <a href="register.php" class="btn btn-default" style="float:right;">Sign UP Here</a>
+
                         </div>
                     </form>
                 </div>
 
                 <!-- button -->
-                <div class="modal-footer">
-                    <button class="btn btn-primary btn-block">Submit</button>
-                </div>
+
 
             </div>
         </div>
