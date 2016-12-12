@@ -17,4 +17,3 @@ if (mysqli_query($connection, $stmt)) {
 
 $connection->close();
 header("Location: Health.php");
-?>
