@@ -57,7 +57,6 @@ if (isset($_POST['btn-login'])) {
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
             crossorigin="anonymous"></script>
 </head>
-<body>
 
 <div class="signin-form">
 
