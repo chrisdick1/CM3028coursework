@@ -14,7 +14,7 @@ $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Cl
 $result = $connection->query($sql);?>
 
     <div class="row">
-        <div class="col-lg-12">
+
 
 
 <?php
@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
             <?php echo "<a href = '/master/club.php?id=$clubid'>Visit Club Page</a>" ?>
 
 
-        </div>
+
         <?php
     }
 } else {
