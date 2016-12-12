@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
                     <div class="panel-body">
                         <h4><?php echo $clubname ?></h4>
                         <p> <?php echo $clubdescription ?></p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href = '/master/club.php?id=$clubid' class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
