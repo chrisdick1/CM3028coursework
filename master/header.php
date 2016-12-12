@@ -52,10 +52,13 @@ session_start();
                 <div class="collapse navbar-collapse" id="mainNavBar">
                     <?php
                     echo"<ul class='nav navbar-nav'>";
-                    echo"<li><a href='/master/clubPage.php'>Home</a></li>";
-                    echo "<li><a href='/master/logout.php'>Clubs</a></li>";
-                    echo "<li><a href='/master/Health.php'>Health</a></li>";
-                    echo "</ul>";
+                    echo"<li><a href='/master/clubPage.php'>Clubs</a></li>";
+                    echo"<li><a href='/master/Health.php'>Health</a></li>";
+                    echo"</ul>";
+                    echo"<ul class='nav navbar-nav navbar-right'>";
+                    echo "<li><a href='/master/loginModal.php'>Log in</a></li>";
+                    echo"</ul>";
+
 
 
                     if (isset($_SESSION['userSession' ])) {
