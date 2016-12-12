@@ -69,7 +69,7 @@ if (isset($_POST['btn-login'])) {
     <div class="container">
 
 
-        <form class="form-signin" method="post" id="login-form">
+        <form class="form-signin"  method="post" id="login-form">
 
             <h2 class="form-signin-heading">Sign In.</h2><hr />
 
