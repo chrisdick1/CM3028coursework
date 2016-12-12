@@ -29,7 +29,7 @@ if (isset($_POST['btn-login'])) {
         $_SESSION['username'] = $row['username'];
         $_SESSION['permissions'] = $row['permissions'];
 
-        header("Location: home.php");
+//        header("Location: home.php");
     } else {
         $msg = "<div class='alert alert-danger'>
      <span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !
