@@ -41,16 +41,16 @@ if ($result->num_rows > 0) {
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4><?php echo $clubname?></h4>
+                        <p><?php echo $clubdescription ?></p>
+                        <?php echo "<a class= 'btn btn-primary' href = '/master/club.php?id=$clubid'>Visit Club Page</a>"?>class="btn btn-primary"
                     </div>
                 </div>
             </div>
 
 
 
-        <p>Club Name: <?php echo $clubname ?></p>
+        <p>lub Name: <?php echo $clubname ?></p>C
         <p>Club Description: <?php echo $clubdescription ?></p>
         <p>Club Genre: <?php echo $clubgenre ?></p>
         <p>Club Contact Information: <?php echo $clubcontact ?></p>
