@@ -51,9 +51,9 @@ if (isset($_POST['btn-login'])) {
             crossorigin="anonymous"></script>
 <body>
 
-<div class="container">
-
-    <h3>Log In Demo</h3>
+<!--<div class="container">-->
+<!---->
+<!--    <h3>Log In Demo</h3>-->
 
 
     <!-- data-toggle lets you display modal without any JavaScript -->
