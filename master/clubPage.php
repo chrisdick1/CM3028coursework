@@ -60,6 +60,52 @@ if ($result->num_rows > 0) {
 }?>
 
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Make News</h4>
+            </div>
+            <form action="createClub.php" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="form-group">
+
+                        <label for="usr">Club Name:</label>
+                        <input type="text" class="form-control" name="name" value="">
+
+                        <label for="usr">Description:</label>
+                        <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
+
+                        <label for="usr">Club Genre:</label>
+                        <input type="text" class="form-control" name="clubgenre" value="">
+                        
+                        <label for="usr">Contact Info:</label>
+                        <input type="text" class="form-control" name="clubcontact" value="">
+                        
+                        <label for="usr">Profile Pic Link</label>
+                        <input type="text" class="form-control" name="profileLink" value="">
+
+                        <label for="usr">Body Pic Link</label>
+                        <input type="text" class="form-control" name="bodyLink" value="">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                    </button>
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </div>
+        </div>
+        </form>
+    </div>
+</div>
+
 
 
 
