@@ -13,7 +13,7 @@ echo $_SESSION["username"];
 $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs";
 $result = $connection->query($sql);?>
 
-    <div class="row">
+
         <div class="col-lg-12">
             <h2 class="page-header">Services Panels</h2>
         </div>
