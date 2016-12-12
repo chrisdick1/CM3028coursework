@@ -7,7 +7,7 @@ session_start();
 require_once("../includes/db_connection.php");
 
 if (isset($_SESSION['userSession'])!="") {
-    header("Location: home.php");
+//    header("Location: home.php");
     exit;
 }
 
