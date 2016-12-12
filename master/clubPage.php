@@ -48,7 +48,7 @@ if ($result->num_rows > 0) {
                 </div>
             </div>
 
-        <div class="jumbotron">
+
 
         <p>Club Name: <?php echo $clubname ?></p>
         <p>Club Description: <?php echo $clubdescription ?></p>
