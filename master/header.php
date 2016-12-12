@@ -47,7 +47,7 @@ session_start();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/master/index.php" class="navbar-brand">Go Porthlethan</a>
+                    <a href="/master/index.php" class="navbar-brand">Go Porthlethen</a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavBar">
                     <?php
