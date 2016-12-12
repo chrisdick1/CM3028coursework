@@ -24,7 +24,7 @@ $result = $connection->query($sql);?>
 
 
         <div class="col-lg-12">
-            <h2 class="page-header">Go Portlethan Clubs</h2>
+            <h2 class="page-header">Go Portlethen Clubs</h2>
         </div>
 
 
