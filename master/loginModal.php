@@ -38,11 +38,7 @@ require_once("../includes/db_connection.php");
     <div class="row">
         <a class="btn btn-primary" data-toggle="modal" href="#myModal" >Login</a>
 
-        <?php
-        if (isset($msg)) {
-            echo $msg;
-        }
-        ?>
+
 
         <div class="modal hide" id="myModal">
             <div class="modal-header">
