@@ -59,6 +59,9 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }?>
 
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
+    Info
+</button>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -105,12 +108,6 @@ if ($result->num_rows > 0) {
         </form>
     </div>
 </div>
-
-
-
-
-
-
 
 
 
