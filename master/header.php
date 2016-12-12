@@ -37,7 +37,7 @@ session_start();
 
 ?>
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
 
         <ul class="nav nav-justified">
             <div class="col-sm-2 col-md-2">
@@ -50,10 +50,9 @@ session_start();
                         </div>
                     </div>
                 </form>
-            </div>
+            </div>-->
             <?php
-            //if shopper
-            //if ($_SESSION['permissions'] == 1) {
+
                 echo"<li><a href='/master/clubPage.php'>Home</a></li>";
                 echo "<li><a href='/master/logout.php'>Clubs</a></li>";
                 echo "<li><a href='/master/Health.php'>Health</a></li>";
