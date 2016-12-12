@@ -1,43 +1,43 @@
-<?php
-include ("header.php");
-?>
-
-<?php
-session_start();
-require_once("../includes/db_connection.php");
-
-if (isset($_SESSION['userSession'])!="") {
-//    header("Location: home.php");
-    exit;
-}
-
-if (isset($_POST['btn-login'])) {
-
-    $email = strip_tags($_POST['email']);
-    $password = strip_tags($_POST['password']);
-
-    $email = $connection->real_escape_string($email);
-    $password = $connection->real_escape_string($password);
-
-    $query = $connection->query("SELECT user_id, username, email, password, permissions FROM tbl_users WHERE email='$email'");
-    $row=$query->fetch_array();
-
-    $count = $query->num_rows; // if email/password are correct returns must be 1 row
-
-    if (password_verify($password, $row['password']) && $count==1) {
-        $_SESSION['userSession'] = $row['user_id'];
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['permissions'] = $row['permissions'];
-
-//        header("Location: home.php");
-    } else {
-        $msg = "<div class='alert alert-danger'>
-     <span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !
-    </div>";
-    }
-    $connection->close();
-}
-?>
+//<?php
+//include ("header.php");
+//?>
+<!---->
+//<?php
+//session_start();
+//require_once("../includes/db_connection.php");
+//
+//if (isset($_SESSION['userSession'])!="") {
+////    header("Location: home.php");
+//    exit;
+//}
+//
+//if (isset($_POST['btn-login'])) {
+//
+//    $email = strip_tags($_POST['email']);
+//    $password = strip_tags($_POST['password']);
+//
+//    $email = $connection->real_escape_string($email);
+//    $password = $connection->real_escape_string($password);
+//
+//    $query = $connection->query("SELECT user_id, username, email, password, permissions FROM tbl_users WHERE email='$email'");
+//    $row=$query->fetch_array();
+//
+//    $count = $query->num_rows; // if email/password are correct returns must be 1 row
+//
+//    if (password_verify($password, $row['password']) && $count==1) {
+//        $_SESSION['userSession'] = $row['user_id'];
+//        $_SESSION['username'] = $row['username'];
+//        $_SESSION['permissions'] = $row['permissions'];
+//
+////        header("Location: home.php");
+//    } else {
+//        $msg = "<div class='alert alert-danger'>
+//     <span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !
+//    </div>";
+//    }
+//    $connection->close();
+//}
+//?>
 <html>
 <head>
     <title>Log In</title>
