@@ -57,7 +57,7 @@ session_start();
                     echo "<li><a href='/master/Health.php'>Health</a></li>";
 
 
-                    if (isset($_SESSION['userSession'])) {
+                    if (isset($_SESSION['userSession' ])) {
                         echo "<li><a href='/master/admin.php'>Admin</a></li>";
                         echo "<li><a href='/master/logout.php'>Logout</a></li>";
 
