@@ -13,7 +13,9 @@ echo $_SESSION["username"];
 $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs";
 $result = $connection->query($sql);?>
 
-    <div class="col-xs-12" id="images">
+    <div class="row">
+        <div class="col-lg-12">
+
 
 <?php
 if ($result->num_rows > 0) {
@@ -25,22 +27,8 @@ if ($result->num_rows > 0) {
        $clubgenre = $row["clubgenre"];
        $clubcontact = $row["clubcontact"];
 
-       ?> <div class="jumbotron">
+       ?>
 
-        <p>Club Name: <?php echo $clubname ?></p>
-        <p>Club Description: <?php echo $clubdescription ?></p>
-        <p>Club Genre: <?php echo $clubgenre ?></p>
-        <p>Club Contact Information: <?php echo $clubcontact ?></p>
-            <?php echo "<a href = '/master/club.php?id=$clubid'>Visit Club Page</a>" ?>
-
-
-        </div>
-        <?php
-    }
-} else {
-    echo "0 results";
-}?>
-        <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Services Panels</h2>
             </div>
@@ -59,52 +47,23 @@ if ($result->num_rows > 0) {
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
+
+        <div class="jumbotron">
+
+        <p>Club Name: <?php echo $clubname ?></p>
+        <p>Club Description: <?php echo $clubdescription ?></p>
+        <p>Club Genre: <?php echo $clubgenre ?></p>
+        <p>Club Contact Information: <?php echo $clubcontact ?></p>
+            <?php echo "<a href = '/master/club.php?id=$clubid'>Visit Club Page</a>" ?>
+
+
         </div>
+        <?php
+    }
+} else {
+    echo "0 results";
+}?>
+
 
 
 
