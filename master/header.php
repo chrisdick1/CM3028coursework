@@ -58,7 +58,7 @@ session_start();
                     echo"</ul>";
                     echo"<ul class='nav navbar-nav navbar-right'>";
                     if (!isset($_SESSION['userSession' ])) {
-                        echo "<li><a href='master/logIn.php'>LogIn</a></li>";
+                        echo "<li><a href='/master/logIn.php'>LogIn</a></li>";
                     }
                     echo"</ul>";
 
