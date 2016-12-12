@@ -81,11 +81,6 @@
                 <div class="modal-body">
                     <form role="form">
 
-                        <?php
-                        if(isset($msg)){
-                            echo $msg;
-                        }
-                        ?>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" name="email" required />
                             <span id="check-e"></span>
