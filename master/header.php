@@ -57,7 +57,9 @@ session_start();
                     echo"<li><a href='/master/Health.php'>Health</a></li>";
                     echo"</ul>";
                     echo"<ul class='nav navbar-nav navbar-right'>";
-                    echo "<li><a href='/master/logIn.php'>Log in</a></li>";
+                    if (!isset($_SESSION['userSession' ])) {
+                        echo "<li><a href='/master/logIn.php'>Log in</a></li>";
+                    }
                     echo"</ul>";
 
 
