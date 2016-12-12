@@ -56,7 +56,7 @@ session_start();
                     echo"<li><a href='/master/Health.php'>Health</a></li>";
                     echo"</ul>";
                     echo"<ul class='nav navbar-nav navbar-right'>";
-                    echo "<li><a href='/master/loginModal2.php'>Log in</a></li>";
+                    echo "<li><a href='/master/logIn.php'>Log in</a></li>";
                     echo"</ul>";
 
 
