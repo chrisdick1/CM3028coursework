@@ -37,8 +37,9 @@ session_start();
                     </div>
                 </form>
             </div>-->
-    <div>
+
         <nav class="navbar navbar-inverse">
+            <div>
             <div class="container-fluid">
                 <!-- Logo -->
                 <div class="navbar-header">
@@ -70,9 +71,5 @@ session_start();
                 </div>
             </div>
         </nav>
-    </div>
-
-
-        </ul>
     </div>
 </nav>
