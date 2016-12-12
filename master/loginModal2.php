@@ -94,7 +94,9 @@ if (isset($_POST['btn-login'])) {
                             <input type="password" class="form-control" placeholder="Password" name="password" required/>
                         </div>
                         <div class="form-group">
-
+                            <button type="submit" class="btn btn-default" name="btn-login" id="btn-login">
+                                <span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In
+                            </button>
 
                             <a href="register.php" class="btn btn-default" style="float:right;">Sign UP Here</a>
 
@@ -102,10 +104,7 @@ if (isset($_POST['btn-login'])) {
                     </form>
                 </div>
 
-                <!-- button -->
-                <div class="modal-footer">
-                    <button class="btn btn-primary btn-block">Submit</button>
-                </div>
+
 
             </div>
         </div>
