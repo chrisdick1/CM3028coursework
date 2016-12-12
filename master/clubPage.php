@@ -14,7 +14,9 @@ $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Cl
 $result = $connection->query($sql);?>
 
     <div class="row">
-
+        <div class="col-lg-12">
+            <h2 class="page-header">Services Panels</h2>
+        </div>
 
 
 <?php
@@ -29,9 +31,7 @@ if ($result->num_rows > 0) {
 
        ?>
 
-            <div class="col-lg-12">
-                <h2 class="page-header">Services Panels</h2>
-            </div>
+
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -41,16 +41,16 @@ if ($result->num_rows > 0) {
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4><?php echo $clubname?></h4>
-                        <p><?php echo $clubdescription ?></p>
-                        <?php echo "<a class= 'btn btn-primary' href = '/master/club.php?id=$clubid'>Visit Club Page</a>"?>class="btn btn-primary"
+                        <h4>Service One</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
 
 
 
-        <p>lub Name: <?php echo $clubname ?></p>C
+        <p>Club Name: <?php echo $clubname ?></p>
         <p>Club Description: <?php echo $clubdescription ?></p>
         <p>Club Genre: <?php echo $clubgenre ?></p>
         <p>Club Contact Information: <?php echo $clubcontact ?></p>
