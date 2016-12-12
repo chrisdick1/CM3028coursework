@@ -77,7 +77,7 @@ if (isset($_POST['btn-login'])) {
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form">
+                    <form role="form" method="post">
 
                         <?php
                         if(isset($msg)){
