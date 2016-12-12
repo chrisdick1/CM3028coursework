@@ -20,7 +20,6 @@
 
 <?php
 session_start();
-
 ?>
 <!--<nav class="navbar navbar-default">
     <!--<div class="container-fluid">
@@ -74,6 +73,7 @@ session_start();
                     ?>
                 </div>
             </div>
+            </div>
         </nav>
-    </div>
+
 </nav>
