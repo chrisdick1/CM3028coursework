@@ -43,7 +43,7 @@ session_start();
             <div class="container-fluid">
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
