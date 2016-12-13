@@ -69,7 +69,7 @@ if ($result->num_rows > 0) {
 
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="pull pull-right">
 
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                     <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
