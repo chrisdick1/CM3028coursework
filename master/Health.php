@@ -3,6 +3,10 @@ require_once("../includes/db_connection.php");
 include ("header.php");
 session_start();
 ?>
+<header class="intro-header" style="background-image: url('img/LOGO.png')">
+    </div>
+    </div>
+</header>
 <head>
     <title>Health</title>
     <meta charset="utf-8">
