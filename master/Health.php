@@ -26,8 +26,7 @@ session_start();
 $sql = "SELECT eventID, eventName, description, date FROM health";
 
 $result = $connection->query($sql);?>
-<div class="row">
-    <div class="col-lg-6 col-cen">
+
 <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Event
     </button>
@@ -68,7 +67,7 @@ $result = $connection->query($sql);?>
 
         </div>
     </div>
-    
+
 <?php } ?>
 
     <?php
