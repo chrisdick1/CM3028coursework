@@ -3,6 +3,12 @@ include ("header.php");
 ?>
 
 <?php
+if(!empty($_GET['status'])){
+    echo '<div>You have been logged out!</div>';
+}
+?>
+
+<?php
 session_start();
 require_once("../includes/db_connection.php");
 

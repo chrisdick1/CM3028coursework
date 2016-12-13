@@ -15,5 +15,6 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['userSession']);
     unset($_SESSION['username']);
 
-    header("Location: clubPage.php");
+    header("location: /master/index.php?status=loggedout");
+//    header("Location: clubPage.php");
 }
