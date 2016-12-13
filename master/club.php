@@ -5,11 +5,8 @@ include ("header.php");?>
 <?php
 $id = $_GET['id'];
 
-$sql = "SELECT clubid, clubName, clubDescription, clubContact FROM Clubs WHERE clubid = $id";
+$sql = "SELECT clubid, clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM Clubs WHERE clubid = $id";
 $result = $connection->query($sql);?>
-
-
-(clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website)
 
     <html lang="en">
 
@@ -24,7 +21,7 @@ $result = $connection->query($sql);?>
 
     <div class="col-xs-12" id="images">
         <?php
-        $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs WHERE clubid = $id";
+        $sql = "SELECT clubid, clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM Clubs WHERE clubid = $id";
         $result = $connection->query($sql);?>
 
         <div class="col-xs-12" id="images">
