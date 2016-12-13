@@ -42,7 +42,9 @@ $result = $connection->query($sql);?>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
 
-
+                <form action="deleteHealth.php" method="post">
+                    <input type="hidden" name="eventName" value='<?php echo $eventName; ?>'>
+                    <input type="submit" value="Delete">
             </div>
             <?php
         }
