@@ -23,7 +23,7 @@ if(!empty($_GET['status'])){ ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
+                < class="site-heading">
                     <h1>Go Portlethen</h1>
                     <hr class="small">
                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue nec justo dignissim maximus. Etiam eleifend tortor a magna sagittis, nec varius mauris accumsan. Vestibulum
@@ -35,9 +35,7 @@ if(!empty($_GET['status'])){ ?>
 
 
 </span>
-
-
-
+                    <br>
                     <span class="subheading">Nnc gravida ultrices vestibulum. Curabitur a lorem lectus. Mauris semper orci et dui semper, a feugiat augue iaculis. Integer quis commodo nulla. Nunc finibus elementum ante, vel ultrices libero dapibus scele
                     risque. Nullam venenatis metus ut urna ullamcorper, ac condimentum odio sagittis. Mauris malesuada imperdiet massa, non dignissim risus suscipit vel. Duis feugiat tempus eros, at dictum diam imperdiet id. In
                     a neque eget elit lobortis gravida ac quis metus. Nullam luctus arcu nec urna gravida, eget consequat diam semper. Etiam in leo vitae tortor tempor sollicitudin ut sit amet leo. Cras dignissim sem ut odio ultri
