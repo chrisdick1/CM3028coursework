@@ -5,7 +5,7 @@
     }
 
     .col-md-10 {
-        height: 500px;
+        height: 800px;
     }
     h1{
         color:white
