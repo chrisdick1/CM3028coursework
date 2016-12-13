@@ -8,7 +8,6 @@ include ("header.php");
             .col-md-10{
                  height: 300px;
          }
-
 </style>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
