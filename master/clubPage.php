@@ -90,10 +90,6 @@ if ($result->num_rows > 0) {
 
 }?>
 
-<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) {?>
-    <button type="button" class="btn btn-info btn-lg btn-pull-right" data-toggle="modal" data-target="#myModal">Add Club
-    </button>
-<?php } ?>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
