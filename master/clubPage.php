@@ -64,7 +64,7 @@ if ($result->num_rows > 0) {
                     </div>
                     <div class="panel-body">
                         <h4><?php echo $name ?></h4>
-                        <p maxlength="150"> <?php echo $description ?></p>
+                        <h5> <?php echo $description ?></h5>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>"?>
                         <form action="deleteClub.php" method="post">
                             <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
