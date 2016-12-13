@@ -16,7 +16,7 @@
 if(!empty($_GET['status'])){ ?>
     <div class="alert alert-success alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Success!</strong> Indicates a successful or positive action.
+        <strong>logged out!</strong>
     </div>
 }
 <?php }?>
