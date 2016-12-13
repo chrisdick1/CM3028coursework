@@ -18,7 +18,7 @@ session_start();
 <!-- Trigger the modal with a button -->
 <body>
 <div class="row">
-    <div class="col-lg-12 col-cen">
+    <div class="col-lg-1">
         <img src="img/LOGO.png" class="img-responsive">
     </div>
 </div>
