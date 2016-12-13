@@ -32,6 +32,7 @@ $result = $connection->query($sql);?>
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
+            $eventID = $row ["eventID"];
             $eventName = $row["eventName"];
             $description = $row["description"];
             $date = $row["date"];
@@ -43,7 +44,7 @@ $result = $connection->query($sql);?>
                 <p>Date <?php echo $date ?></p>
 
                 <form action="deleteHealth.php" method="post">
-                    <input type="hidden" name="eventName" value='<?php echo $eventName; ?>'>
+                    <input type="hidden" name="eventID" value='<?php echo $eventID; ?>'>
                     <input type="submit" value="Delete">
             </div>
             <?php
