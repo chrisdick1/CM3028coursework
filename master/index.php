@@ -1,15 +1,4 @@
-<?php include ("header.php"); ?>
 
-<?php
-if(!empty($_GET['status'])){
-    echo '<div class=container-fluid';
-    echo '<div class="col-md-12">$';
-    echo '<div class="alert alert-success">
-<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
-    echo '</div>';
-    echo '</div>';
-}
-?>
 <style>   .col-lg-8{
         height: 300px;
     }
@@ -20,8 +9,22 @@ if(!empty($_GET['status'])){
     h1{
         color:white
     }
-
-</style>
+    .col-md-12{
+        height:25px;
+    }
+    <?php include ("header.php"); ?>
+</style
+<?php
+if(!empty($_GET['status'])){
+    echo '<div class=container-fluid';
+    echo '<div class="col-md-12">';
+    echo '<div class="alert alert-success">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
+    echo '</div>';
+    echo '</div>';
+}
+?>
+>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
         <div class="row">
@@ -35,19 +38,6 @@ if(!empty($_GET['status'])){
         </div>
     </div>
 </header>
-
-<?php
-/*if you are coming from logout page -> shout this out\*/
-if(!empty($_GET['status'])){
-    echo '<div class=container-fluid';
-    echo '<div class="col-md-1 col-md-offset-10 ">$';
-    echo '<div class="alert alert-success">
-<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
-    echo '</div>';
-    echo '</div>';
-}
-?>
-
 <?php
 session_start();
 require_once("../includes/db_connection.php");
