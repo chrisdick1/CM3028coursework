@@ -2,7 +2,7 @@
 session_start();
 include ("header.php");
 ?>
-
+</nav>
 <head>
     <title>Health</title>
     <meta charset="utf-8">
