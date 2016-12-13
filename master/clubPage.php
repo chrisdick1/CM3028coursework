@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
 
 
                         <span class="fa-stack fa-5x">
-                             <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive" width:"300" height:"300"'>
+                             <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive" width:"250" height:"250"'>
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
