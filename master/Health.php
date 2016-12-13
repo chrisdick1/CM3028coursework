@@ -39,14 +39,15 @@ $result = $connection->query($sql);?>
 
             ?> <div class="jumbotron">
 
-                <p>Event: <?php echo $eventName ?></p>
-                <p><?php echo $description ?></p>
-                <p>Date <?php echo $date ?></p>
-
                 <form action="deleteHealth.php" method="post">
                     <input type="hidden" name="eventID" value='<?php echo $eventID; ?>'>
                     <input type="submit" value="Delete">
             </div>
+                <p>Event: <?php echo $eventName ?></p>
+                <p><?php echo $description ?></p>
+                <p>Date <?php echo $date ?></p>
+
+
             <?php
         }
     } else {
