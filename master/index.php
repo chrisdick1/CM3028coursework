@@ -1,7 +1,15 @@
 <?php
 include ("header.php");
 ?>
+<style>   .col-lg-8{
+                    height: 872px;
+         }
 
+            .col-lg-8{
+                 height: 872px;
+         }
+
+</style>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
         <div class="row">
