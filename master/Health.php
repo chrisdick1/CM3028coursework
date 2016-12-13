@@ -45,10 +45,12 @@ $result = $connection->query($sql);?>
                 <form action="deleteHealth.php" method="post">
                     <input type="hidden" name="eventID" value='<?php echo $eventID; ?>'>
                     <input type="submit" value="Delete">
-            </div>
+                </form>
+
                 <p>Event: <?php echo $eventName ?></p>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
+            </div>
 
 
             <?php
