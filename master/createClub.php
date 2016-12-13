@@ -23,5 +23,5 @@ else {
 }
 
 $connection->close();
-//header("Location: clubPage.php");
+header("Location: clubPage.php");
 ?>
