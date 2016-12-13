@@ -5,14 +5,14 @@ include ("header.php");
 ?>
 
 </nav>
-<style>
-    p {
-        width: 250px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-</style>s>
+<!--<style>-->
+<!--    p {-->
+<!--        width: 250px;-->
+<!--        white-space: nowrap;-->
+<!--        overflow: hidden;-->
+<!--        text-overflow: ellipsis;-->
+<!--    }-->
+<!--</style>-->
 <head>
     <title>Health</title>
     <meta charset="utf-8">
