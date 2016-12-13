@@ -1,8 +1,8 @@
 <!--some additional css-->
 <style>
-    .col-lg-8{
-        height: 500px;
-    }
+    /*.col-lg-8{*/
+        /*height: 500px;*/
+    /*}*/
 
     .col-md-10 {
         height: 1000px;
