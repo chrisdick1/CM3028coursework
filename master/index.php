@@ -3,12 +3,13 @@
                     height: 300px;
          }
 
-            .col-md-10{
-                 height: 300px;
-            h1{
-                color:white
+            .col-md-10 {
+                height: 300px;
             }
-         }
+        h1{
+            color:white
+        }
+
 </style>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
