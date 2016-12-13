@@ -64,15 +64,15 @@ if ($result->num_rows > 0) {
         $website = $row["website"]
 
         ?>
-        //card design div
+<!--        //card design div-->
         <div class="col-md-4 col-sm-6">
 
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                     <ul class="pull pull-right">
-                        //vit button
+<!--                        //vit button-->
                         <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
-                        //pop delete picture if admin session exists
+<!--                        //pop delete picture if admin session exists-->
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
