@@ -1,5 +1,4 @@
 <?php
-$clubID = $_GET['id'];
 session_start();
 include ("header.php");
 
