@@ -1,18 +1,20 @@
 <?php
 require_once("../includes/db_connection.php");
+//include dynamic header
 include ("header.php");
 session_start();
 ?>
 
 <div class="jumbotron">
-    <h2>Admin Page</h2>
-    <h4>Non Verified Users: </h4>
+    <h2>View content editing requests:</h2>
+    <h3>Admin Page</h3>
+    <h3>Non Verified Users: </h3>
 <?php
 
 //selecting all users that are waiting to be validated.
 $sql = "SELECT user_id, username FROM tbl_users WHERE permissions = 2";
 $result = $connection->query($sql);
-//displaying all users that are waiting to be validated
+//displaying all users that are requiring validation
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -26,7 +28,7 @@ if ($result->num_rows > 0) {
 
     }
 } else {
-    echo "0 results";
+    echo "No verification requests";
 } 
-
+//after last display, close connection
 $connection->close();

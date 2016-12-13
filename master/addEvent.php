@@ -6,7 +6,7 @@ $name = strip_tags($_POST["name"]);
 $description = $_POST["description"];
 $date = $_POST["date"];
 
-
+//get stmt to insert into row of health (function)
 $stmt = "INSERT INTO health (eventName, description, date) VALUE ('$name', '$description', '$date')";
 
 if (mysqli_query($connection, $stmt)) {
@@ -14,7 +14,7 @@ if (mysqli_query($connection, $stmt)) {
 } else {
     echo "Error: " . $stmt . "<br>" . mysqli_error($connection);
 }
-
+//check connection
 $connection->close();
 header("Location: Health.php");
 ?>
