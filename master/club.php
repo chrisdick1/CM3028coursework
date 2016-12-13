@@ -62,14 +62,14 @@ $result = $connection->query($sql);?>
                     </div>
 
                     <div class="col-md-4">
-                        <h3>name:<?php echo $name ?></h3>
-                        <p>desc:<?php echo $description ?></p>
+                        <h3><?php echo $name ?></h3>
+                        <p><?php echo $description ?></p>
                         <h3>Contact Details</h3>
                         <ul>
-                            <li>name<?php echo $contact ?></li>
-                            <li>email<?php echo $email ?></li>
-                            <li>number<?php echo $number ?></li>
-                            <li>website<?php echo $website ?></li>
+                            <li><?php echo $contact ?></li>
+                            <li><?php echo $email ?></li>
+                            <li><?php echo $number ?></li>
+                            <li><?php echo $website ?></li>
                         </ul>
                     </div>
 
