@@ -17,7 +17,7 @@
             crossorigin="anonymous"></script>
      <style>
          .navbar {
-             border: 0 !important;
+             margin-bottom: 0;
          }
      </style>
 </head>
