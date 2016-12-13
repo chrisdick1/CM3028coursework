@@ -19,10 +19,10 @@ include ("header.php");
 require_once("../includes/db_connection.php");
 echo $_SESSION["username"];
 
-$sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink FROM Clubs";
+$sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink FROM clubs";
 $result = $connection->query($sql);?>
 
-
+clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website
         <div class="col-lg-12">
             <h2 class="page-header">Go Portlethen Clubs</h2>
         </div>
@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
        $clubid = $row["clubid"];
-       $clubname = $row["clubname"];
+       $clubname = $row["clubName"];
        $clubdescription = $row["clubdescription"];
        $profileLink = $row["profileLink"];
        $bodyLink = $row["bodyLink"];
