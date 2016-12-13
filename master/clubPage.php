@@ -18,7 +18,7 @@ include ("header.php");
 <?php
 require_once("../includes/db_connection.php");
 
-$sql = "SELECT clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM clubs";
+$sql = "SELECT clubid, clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM clubs";
 $result = $connection->query($sql);?>
 
 
@@ -54,8 +54,8 @@ if ($result->num_rows > 0) {
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4><?php echo $clubname ?></h4>
-                        <p> <?php echo $clubdescription ?></p>
+                        <h4><?php echo $name ?></h4>
+                        <p> <?php echo $description ?></p>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>"?>
                     </div>
                 </div>
