@@ -4,7 +4,7 @@ include ("header.php");?>
 </nav>
 <?php
 $id = $_GET['id'];
-$clubid = $_GET['id'];
+
 
 $sql = "SELECT clubid, clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM Clubs WHERE clubid = $id";
 $result = $connection->query($sql);?>
