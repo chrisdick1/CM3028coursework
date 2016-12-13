@@ -13,5 +13,5 @@ if (mysqli_query($connection, $sql)) {
 }
 echo '$clubid';
 
-//header("Location: clubPage.php")  ;
+header("Location: clubPage.php")  ;
 ?>"
