@@ -20,7 +20,7 @@ if(!empty($_GET['status'])){
     echo '<div class="col-md-12">';
     echo '<div class="alert alert-success">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
-    echo '</div>';
+    echo '</div>' ;
     echo '</div>';
 }
 ?>
