@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
 
        ?>
 
-         <div class="col-md-2 col-sm-6" >
+         <div class="col-lm-4 col-md-4 col-sm-6" >
 
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
