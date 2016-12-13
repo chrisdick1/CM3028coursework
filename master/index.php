@@ -20,33 +20,7 @@ if(!empty($_GET['status'])){ ?>
         <strong>Success!</strong> You now have been logged off from your session.
     </div>
 <?php }?>
-<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-    <div class="container">
-<!--         <div class="row">-->
-<!--            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
-<!---->
-<!--                    <h1>Go Portlethen</h1>-->
-<!--                    <hr class="small">-->
-<!--                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue nec justo dignissim maximus. Etiam eleifend tortor a magna sagittis, nec varius mauris accumsan. Vestibulum-->
-<!--                        vitae felis vitae odio ultrices finibus laoreet in felis. Aliquam ex risus, interdum eget velit ut, luctus interdum justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos-->
-<!---->
-<!--                        himenaeos. Suspendisse dapibus blandit vestibulum. Mauris tempus orci sit amet vulputate lacinia. Duis eget nunc non augue gravida interdum sed et magna. Class aptent taciti sociosqu ad litora torquent per-->
-<!--                        conubia nostra, per inceptos himenaeos. Sed eget nulla viverra, venenatis orci et, egestas nibh. Ut luctus sapien sagittis dui sodales, ac dictum quam laoreet. Vestibulum ut nunc blandit arcu posuere tinci-->
-<!--                        dunt.-->
-<!---->
-<!---->
-<!--</span>-->
-<!--                    <br>-->
-<!--                    <span class="subheading">Nnc gravida ultrices vestibulum. Curabitur a lorem lectus. Mauris semper orci et dui semper, a feugiat augue iaculis. Integer quis commodo nulla. Nunc finibus elementum ante, vel ultrices libero dapibus scele-->
-<!--                    risque. Nullam venenatis metus ut urna ullamcorper, ac condimentum odio sagittis. Mauris malesuada imperdiet massa, non dignissim risus suscipit vel. Duis feugiat tempus eros, at dictum diam imperdiet id. In-->
-<!--                    a neque eget elit lobortis gravida ac quis metus. Nullam luctus arcu nec urna gravida, eget consequat diam semper. Etiam in leo vitae tortor tempor sollicitudin ut sit amet leo. Cras dignissim sem ut odio ultri-->
-<!--                    cies, quis condimentum diam blandit. Pellentesque diam libero, rhoncus quis eros sed, consectetur variu-->
-<!--</span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-</header>
+
 <?php
 session_start();
 require_once("../includes/db_connection.php");
