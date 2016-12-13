@@ -70,12 +70,12 @@ if ($result->num_rows > 0) {
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                     <ul class="pull pull-right">
-
+                        <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
-                    <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
                     <form action="deleteClub.php" method="post">
-                        <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
+                        <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
+                        <?php echo $clubid; ?>
                     </ul>
                     </form>
                         <?php } ?>
