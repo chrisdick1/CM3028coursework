@@ -48,8 +48,7 @@ $result = $connection->query($sql);?>
                 <!-- Portfolio Item Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Portfolio Item
-                            <small>Item Subheading</small>
+                        <h1 class="page-header">Thanks for Visiting!
                         </h1>
                     </div>
                 </div>
