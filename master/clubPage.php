@@ -75,7 +75,6 @@ if ($result->num_rows > 0) {
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
-                        <?php echo $clubid; ?>
                     </ul>
                     </form>
                         <?php } ?>
