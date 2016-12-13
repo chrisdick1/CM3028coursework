@@ -8,13 +8,13 @@ include ("header.php");
 <head>
 <style>
     .col-lm-4 {
-        height: 500px;
+        max-height: 500px;
     }
     .col-md-4 {
-        height: 500px;
+        max-height: 500px;
     }
     .col-sm-6 {
-        height: 500px;
+        max-height: 500px;
     }
 
 </style>
