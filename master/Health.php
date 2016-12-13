@@ -80,7 +80,7 @@ $result = $connection->query($sql);?>
                         <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
 
                         <label for="usr">Date:</label>
-                        <input type="text" class="form-control" name="date" value="">
+                        <input type="date" class="form-control" name="date" value="">
 
                     </div>
                 </div>
