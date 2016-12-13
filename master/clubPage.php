@@ -5,7 +5,7 @@ include ("header.php");
 ?>
 
 </nav>
-//some css for card pages
+<!--//some css for card pages-->
 <style>
     .col-lm-4 {
         max-height: 500px;
