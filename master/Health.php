@@ -30,6 +30,7 @@ $result = $connection->query($sql);?>
 <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Event
     </button>
+<?php } ?>
  <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -68,7 +69,7 @@ $result = $connection->query($sql);?>
         </div>
     </div>
 
-<?php } ?>
+
 
     <?php
     if ($result->num_rows > 0) {
