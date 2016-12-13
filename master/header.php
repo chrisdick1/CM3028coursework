@@ -79,7 +79,7 @@ session_start();
 
 
                     //setting if function to check for session, if the userSession is active =  initialize the logout button
-                    if (isset($_SESSION['userSession' ])) {
+                    if  (isset($_SESSION['userSession' ])) {
 //
                         echo"<ul class='nav navbar-nav navbar-right'>";
                         echo "<li><a href='/master/logout.php'>Log Out</a></li>";
