@@ -33,8 +33,7 @@ $result = $connection->query($sql);?>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
         Info
     </button>
-<?php } ?>
-    <!-- Modal -->
+ <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -71,6 +70,7 @@ $result = $connection->query($sql);?>
 
         </div>
     </div>
+<?php } ?>
 
     <?php
     if ($result->num_rows > 0) {
