@@ -1,6 +1,6 @@
 <?php
 require_once("../includes/db_connection.php");
-$clubID = $_POST["photoID"];
+$clubID = $_POST["clubID"];
 
 //sql to delete a group
 $sql = "DELETE FROM clubs WHERE clubid = $clubID";
