@@ -74,7 +74,7 @@ if ($result->num_rows > 0) {
 
                     <ul class="pull pull-right">
 <!--                        //visit button-->
-                        <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
+                        <?php echo "<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
 <!--                        //pop delete picture if admin session exists-->
                     </ul>
 <!--                    //Load up a card design using clubs table from MySQL-->
@@ -84,7 +84,7 @@ if ($result->num_rows > 0) {
                         <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
                     </form>
-                    </ul>/
+                    </ul>
 
                     </form>
                         <?php } ?>
