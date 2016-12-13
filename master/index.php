@@ -106,9 +106,8 @@ if (isset($_POST['btn-login'])) {
     </div>
 </div>
 
-<hr>
 
-<!-- Footer -->
+<!-- Footer a-->
 <footer>
     <div class="container">
         <div class="row">
