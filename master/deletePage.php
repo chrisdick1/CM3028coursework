@@ -1,4 +1,5 @@
 <?php
+require_once("../includes/db_connection.php");
 $clubID = $_POST["photoID"];
 
 //sql to delete a group
@@ -10,5 +11,5 @@ if (mysqli_query($connection, $stmt)) {
     echo "Error: " . $stmt . "<br>" . mysqli_error($connection);
 }
 
-//header("Location: clubPage.php");
+header("Location: clubPage.php");
 ?>
