@@ -18,7 +18,7 @@ session_start();
 <br>
 <div class="jumbotron">
     <h2>Health and Wellingbeing<h2>
-            <p>Dinasours</p>
+            <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive"'>
 
 </div>
 <?php
