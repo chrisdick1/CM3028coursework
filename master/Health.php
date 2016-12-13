@@ -80,12 +80,6 @@ $result = $connection->query($sql);?>
             $date = $row["date"];
 
             ?> <div class="jumbotron">
-
-                <form action="deleteHealth.php" method="post">
-                    <input type="hidden" name="eventID" value='<?php echo $eventID; ?>'>
-                    <input type="submit" value="Delete">
-                </form>
-
                 <h3>Event: <?php echo $eventName ?></h3>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
