@@ -14,7 +14,7 @@ $bodyPic = $_POST["bodyPic"];
 $website = $_POST["website"];
 $stmt = "INSERT INTO clubs (clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website) VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
 
-
+//error check statement
 if (mysqli_query($connection, $stmt)) {
     echo "New record created successfully";
 }
@@ -23,5 +23,5 @@ else {
 }
 
 $connection->close();
-header("Location: clubPage.php");
+//header("Location: clubPage.php");
 ?>
