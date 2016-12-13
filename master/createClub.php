@@ -17,9 +17,11 @@ $stmt = "INSERT INTO clubs (clubName, clubDescription, clubContact, emailAddress
 
 if (mysqli_query($connection, $stmt)) {
     echo "New record created successfully";
-} else {
+}
+else {
     echo "Error: " . $stmt . "<br>" . mysqli_error($dbconnect);
 }
 
 $connection->close();
 header("Location: clubPage.php");
+?>
