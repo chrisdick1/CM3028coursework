@@ -11,5 +11,5 @@ if (mysqli_query($connection, $stmt)) {
     echo "Error: " . $stmt . "<br>" . mysqli_error($connection);
 }
 
-header("Location: clubPage.php");
+//header("Location: clubPage.php");
 ?>
