@@ -28,16 +28,17 @@ $result = $connection->query($sql);?>
 
             <?php
             if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) {
-                    $clubid = $row["clubid"];
-                    $clubname = $row["clubname"];
-                    $clubdescription = $row["clubdescription"];
-                    $clubgenre = $row["clubgenre"];
-                    $clubcontact = $row["clubcontact"];
-                    $profileLink = $row["profileLink"];
-                    $bodyLink = $row["bodyLink"];
-
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $clubid = $row["clubid"];
+                $name = $row["name"];
+                $description = $row["description"];
+                $number = $row ["number"];
+                $email = $row ["email"];
+                $profileLink = $row["profilePic"];
+                $bodyLink = $row["bodyPic"];
+                $website = $row["website"]
+            ?>
             ?>
 <!--                     <div class="jumbotron">-->
 <!---->
