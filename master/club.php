@@ -30,15 +30,15 @@ $result = $connection->query($sql);?>
             if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                $clubid = $row["clubid"];
-                $name = $row["name"];
-                $description = $row["description"];
-                $clubcontact = $row["contact"];
-                $number = $row ["number"];
-                $email = $row ["email"];
-                $profileLink = $row["profilePic"];
-                $bodyLink = $row["bodyPic"];
-                $website = $row["website"]
+            $clubid = $row["clubid"];
+            $name = $row["clubName"];
+            $description = $row["clubDescription"];
+            $contact = $row ["clubContact"];
+            $email = $row ["emailAddress"];
+            $number = $row ["phoneNumber"];
+            $profileLink = $row["profileLink"];
+            $bodyLink = $row["bodyLink"];
+            $website = $row["website"]
             ?>
 
             <!-- Page Content -->
@@ -66,7 +66,7 @@ $result = $connection->query($sql);?>
                         <p>desc:<?php echo $description ?></p>
                         <h3>Contact Details</h3>
                         <ul>
-                            <li>name<?php echo $clubcontact ?></li>
+                            <li>name<?php echo $contact ?></li>
                             <li>email<?php echo $email ?></li>
                             <li>number<?php echo $number ?></li>
                             <li>website<?php echo $website ?></li>
