@@ -5,6 +5,7 @@ include ("header.php");
 ?>
 
 </nav>
+//some css for card pages
 <style>
     .col-lm-4 {
         max-height: 500px;
@@ -39,6 +40,7 @@ $result = $connection->query($sql);?>
 
 
         <div class="col-lg-12">
+<!--            if session user is logged in and has the authority to edid - show him add club button-->
             <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
             <button type="button" class="btn btn-info btn-lg btn-right" data-toggle="modal" data-target="#myModal">Add Club
             </button>
@@ -69,15 +71,20 @@ if ($result->num_rows > 0) {
 
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
+
                     <ul class="pull pull-right">
-<!--                        //vit button-->
+<!--                        //visit button-->
                         <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
 <!--                        //pop delete picture if admin session exists-->
                     </ul>
+<!--                    //Load up a card design using clubs table from MySQL-->
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
+                    <ul class="pull pull-right">
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
+                    </form>
+                    </ul>/
 
                     </form>
                         <?php } ?>
@@ -95,7 +102,7 @@ if ($result->num_rows > 0) {
     }
 }
 ?>
-
+<!--Club creation modal links to createClub after gathering the data-->
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
