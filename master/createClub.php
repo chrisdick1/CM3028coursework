@@ -1,7 +1,7 @@
 <?php
 require_once("../includes/db_connection.php"); 
 
-//$_POST[""];
+$_POST[""];
 
 //strip_tags used to remove script tags
 $name = strip_tags($_POST["name"]);
@@ -12,7 +12,7 @@ $number = $_POST["number"];
 $profilePic = $_POST["profilePic"];
 $bodyPic = $_POST["bodyPic"];
 $website = $_POST["website"];
-$stmt = "INSERT INTO Clubs (clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website) VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
+$stmt = "INSERT INTO Clubs (clubid, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website) VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
 
 
 if (mysqli_query($connection, $stmt)) {
