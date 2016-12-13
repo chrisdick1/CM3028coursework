@@ -12,7 +12,7 @@ $number = $_POST["number"];
 $profilePic = $_POST["profilePic"];
 $bodyPic = $_POST["bodyPic"];
 $website = $_POST["website"];
-$stmt = "INSERT INTO clubs (clubid, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website) VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
+$stmt = "INSERT INTO clubs (clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website) VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
 
 
 if (mysqli_query($connection, $stmt)) {
