@@ -57,7 +57,6 @@ session_start();
 <!--                    //'static buttons to be implemented within every page'-->
                     <?php
                     echo"<ul class='nav navbar-nav'>";
-                    echo"<li><a href='/master/home.php'>Home</a></li>";
                     echo"<li><a href='/master/clubPage.php'>Clubs</a></li>";
                     echo"<li><a href='/master/Health.php'>Health</a></li>";
                     echo"</ul>";
