@@ -48,7 +48,7 @@ if ($result->num_rows > 0) {
 
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-
+                        <a href="deletePage.php" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive" width:"300" height:"300"'>
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
