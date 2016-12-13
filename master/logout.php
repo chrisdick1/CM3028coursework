@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-unset($_SESSION['userSession']);
-unset($_SESSION['username']);
+//unset($_SESSION['userSession']);
+//unset($_SESSION['username']);
 
 if (!isset($_SESSION['userSession'])) {
     header("Location: clubPage.php");
