@@ -51,7 +51,8 @@ $result = $connection->query($sql);?>
     }?>
 
 
-    <?php if ($_SESSION['permissions'] == 3){ ?>
+    <?php if ($_SESSION['permissions'] == 3){
+        echo "permissions";?>
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
     Info
