@@ -6,18 +6,18 @@ include ("header.php");
 
 </nav>
 <head>
-<style>
-    .col-lm-4 {
-        max-height: 500px;
-    }
-    .col-md-4 {
-        max-height: 500px;
-    }
-    .col-sm-6 {
-        max-height: 500px;
-    }
-
-</style>
+<!--<style>-->
+<!--    .col-lm-4 {-->
+<!--        max-height: 500px;-->
+<!--    }-->
+<!--    .col-md-4 {-->
+<!--        max-height: 500px;-->
+<!--    }-->
+<!--    .col-sm-6 {-->
+<!--        max-height: 500px;-->
+<!--    }-->
+<!---->
+<!--</style>-->
 
     <title>Health</title>
     <meta charset="utf-8">
