@@ -10,20 +10,16 @@
     h1{
         color:white
     }
-    .col-md-12{
-        height:25px;
-    }
 </style>
 <?php include ("header.php"); ?>
 <?php
-if(!empty($_GET['status'])){
-    echo '<div class="col-md-12">';
-    echo '<div class="alert alert-success">
-<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
-    echo '</div>' ;
-    echo '</div>';
+if(!empty($_GET['status'])){ ?>
+    <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
 }
-?>
+<?php }?>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
         <div class="row">
