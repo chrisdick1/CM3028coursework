@@ -1,7 +1,7 @@
 <?php
 require_once("../includes/db_connection.php");
 
-$clubid = $_GET["clubid"];
+$clubid = $_POST["clubid"];
 
 //sql to delete a group
 $sql = "DELETE FROM clubs WHERE clubid = '$clubid'";
@@ -13,5 +13,5 @@ if (mysqli_query($connection, $sql)) {
 }
 
 
-//header("Location: clubPage.php") ;
+//header("Location: clubPage.php")  ;
 ?>
