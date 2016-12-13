@@ -68,6 +68,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }?>
 
+<?php if ($_SESSION['permissions'] == 3){ ?>
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
 </button>
 
@@ -113,6 +114,7 @@ if ($result->num_rows > 0) {
 
                 </div>
         </div>
+        <?php } ?>
         </form>
     </div>
 </div>
