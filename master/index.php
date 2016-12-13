@@ -5,9 +5,11 @@ include ("header.php");
 <?php
 /*if you are coming from logout page -> shout this out\*/
 if(!empty($_GET['status'])){
-    echo '<div class="col-md-1 col-md-offset-10  text-center">$';
+    echo '<div class=container-fluid';
+    echo '<div class="col-md-1 col-md-offset-10 ">$';
     echo '<div class="alert alert-success">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
+    echo '</div>';
     echo '</div>';
 }
 ?>
