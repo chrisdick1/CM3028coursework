@@ -54,7 +54,7 @@ session_start();
                     <a href="/master/index.php" class="navbar-brand">Go Porthlethen</a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavBar">
-                    //'static buttons to be implemented within every page'
+<!--                    //'static buttons to be implemented within every page'-->
                     <?php
                     echo"<ul class='nav navbar-nav'>";
                     echo"<li><a href='/master/home.php'>Home</a></li>";
