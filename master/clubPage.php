@@ -58,11 +58,11 @@ if ($result->num_rows > 0) {
 
        ?>
 
-         <div class="col-md-3 col-sm-6" >
+         <div class="col-lg-2 col-md-3 col-sm-6" >
 
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <a href="deleteClub.php" name="clubid" class="close" data-dismiss="alert" aria-label="close" value='<?php echo $clubid; ?>'>&times;</a>
+
                         <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive" width:"300" height:"300"'>
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -71,9 +71,9 @@ if ($result->num_rows > 0) {
                     </div>
                     <div class="panel-body">
                         <h4><?php echo $name ?></h4>
-                        <h5> <?php echo $description ?></h5>
+                        <p> <?php echo $description ?></p>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
-                        <form action="deleteClub.php" method="post" class="close">
+                        <form action="deleteClub.php" method="post">
                             <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
                             <input type="submit" value="Delete">
                         </form>
