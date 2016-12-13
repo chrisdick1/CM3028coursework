@@ -65,10 +65,10 @@ if ($result->num_rows > 0) {
                     <div class="panel-heading">
                         <a href="deleteClub.php" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive" width:"300" height:"300"'>
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
+<!--                        <span class="fa-stack fa-5x">-->
+<!--                              <i class="fa fa-circle fa-stack-2x text-primary"></i>-->
+<!--                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>-->
+<!--                        </span>-->
                     </div>
                     <div class="panel-body">
                         <h4><?php echo $name ?></h4>
