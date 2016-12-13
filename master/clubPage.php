@@ -69,6 +69,13 @@ if ($result->num_rows > 0) {
 
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
+                    <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
+                    <?php echo "<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
+                    <form action="deleteClub.php" method="post">
+                        <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
+                        <input type="submit" value="Delete">
+                    </form>
+                        <?php } ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
@@ -76,13 +83,6 @@ if ($result->num_rows > 0) {
                 <div class="panel-body text-center">
                     <h4><?php echo $name ?></h4>
                     <p> <?php echo $description ?></p>
-            <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
-                    <?php echo "<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
-                    <form action="deleteClub.php" method="post">
-                        <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
-                        <input type="submit" value="Delete">
-             <?php } ?>
-                    </form>
                 </div>
             </div>
         </div>
