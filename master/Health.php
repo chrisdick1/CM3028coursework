@@ -17,12 +17,13 @@ session_start();
 
 <!-- Trigger the modal with a button -->
 <body>
-<br>
-<div class="container-fluid">
-<!--<div class="jumbotron">-->
-    <img src="img/LOGO.png" class="img-responsive">
+<div class="row">
+    <div class="col-lg-1 col-centered">
+        <img src="img/LOGO.png" class="img-responsive">
+    </div>
 </div>
-</div>
+
+
 <?php
 $sql = "SELECT eventID, eventName, description, date FROM health";
 
