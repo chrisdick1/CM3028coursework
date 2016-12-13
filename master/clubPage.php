@@ -78,7 +78,7 @@ if ($result->num_rows > 0) {
 <!--                        //pop delete picture if admin session exists-->
                     </ul>
 <!--                    //Load up a card design using clubs table from MySQL-->
-                        <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
+<!--                        --><?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
 <!--                    <ul class="pull pull-right">-->
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
@@ -86,7 +86,7 @@ if ($result->num_rows > 0) {
                     </form>
 <!--                    </ul>-->
 <!--                            //insert the picture into card design page-->
-                        <?php } ?>
+<!--                        --><?php //} ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
