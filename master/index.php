@@ -20,7 +20,9 @@ if(!empty($_GET['status'])){ ?>
         <strong>Success!</strong> You now have been logged off from your session.
     </div>
 <?php }?>
+<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
 
+</header>
 <?php
 session_start();
 require_once("../includes/db_connection.php");
