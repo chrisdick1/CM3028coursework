@@ -30,7 +30,51 @@ $sql = "SELECT eventID, eventName, description, date FROM health";
 $result = $connection->query($sql);?>
 
 <div class="col-xs-12" id="images">
+    </div>
+<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
 
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
+        Info
+    </button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Make News</h4>
+                </div>
+                <form action="addEvent.php" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-group">
+
+                            <label for="usr">Event Name:</label>
+                            <input type="text" class="form-control" name="name" value="">
+
+                            <label for="usr">Description:</label>
+                            <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
+
+                            <label for="usr">Date:</label>
+                            <input type="date" class="form-control" name="date" value="">
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                        </button>
+                        <button type="submit" class="btn btn-default">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+<?php } ?>
     <?php
     if ($result->num_rows > 0) {
         // output data of each row
@@ -60,8 +104,7 @@ $result = $connection->query($sql);?>
     }?>
 
 
-    <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){
-        echo "permissions";?>
+    <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
     Info
