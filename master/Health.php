@@ -20,6 +20,7 @@ session_start();
 <div class="row">
     <div class="col-lg-6 col-cen">
         <img src="img/LOGO.png" class="img-responsive">
+    </div>
 
 
 <?php
