@@ -1,7 +1,7 @@
 <?php
 require_once("../includes/db_connection.php");
 
-$clubid = $_POST["clubid"];
+$clubid = $_GET["clubid"];
 
 //sql to delete a group
 $sql = 'DELETE FROM clubs WHERE clubid = $clubid';
