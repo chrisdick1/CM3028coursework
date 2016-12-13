@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body text-center">
                         <h4><?php echo $name ?></h4>
                         <p> <?php echo $description ?></p>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
