@@ -5,7 +5,7 @@ include ("header.php");
                     height: 872px;
          }
 
-            .col-lg-8{
+            .col-md-10{
                  height: 872px;
          }
 
