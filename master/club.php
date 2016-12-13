@@ -33,19 +33,14 @@ $result = $connection->query($sql);?>
                 $clubid = $row["clubid"];
                 $name = $row["name"];
                 $description = $row["description"];
+                $clubcontact = $row["contact"];
                 $number = $row ["number"];
                 $email = $row ["email"];
                 $profileLink = $row["profilePic"];
                 $bodyLink = $row["bodyPic"];
                 $website = $row["website"]
             ?>
-            ?>
-<!--                     <div class="jumbotron">-->
-<!---->
 
-<!---->
-<!---->
-<!--                    </div>-->
             <!-- Page Content -->
             <div class="container">
 
@@ -67,13 +62,14 @@ $result = $connection->query($sql);?>
                     </div>
 
                     <div class="col-md-4">
-                        <h3>Club Description</h3>
+                        <h3><?php echo $name ?></h3>
                         <p><?php echo $description ?></p>
                         <h3>Contact Details</h3>
                         <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Dolor Sit Amet</li>
-                            <li>Consectetur</li>
+                            <li><?php echo $clubcontact ?></li>
+                            <li><?php echo $email ?></li>
+                            <li><?php echo $number ?></li>
+                            <li><?php echo $website ?></li>
                             <li>Adipiscing Elit</li>
                         </ul>
                     </div>
