@@ -93,7 +93,7 @@ if ($result->num_rows > 0) {
                         <label for="usr">Club Name:</label>
                         <input type="text" class="form-control" name="name" value="">
 
-                        <label for="usr">Description:</label>
+                         <label for="usr">Description:</label>
                         <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
 
                         <label for="usr">Contact Info:</label>
