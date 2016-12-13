@@ -83,6 +83,10 @@ $result = $connection->query($sql);?>
                 <h3>Event: <?php echo $eventName ?></h3>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
+                <form action="deleteClub.php" method="post">
+                    <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
+                    <input type="submit" value="Delete">
+                </form>
             </div>
 
 
