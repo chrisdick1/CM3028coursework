@@ -10,7 +10,7 @@ unset($_SESSION['username']);
 //    header("Location: clubPage.php");
 //}
 
-if (isset($_GET['logout'])) {
+if (isset($_GET['logout'])){
     session_destroy();
     unset($_SESSION['userSession']);
     unset($_SESSION['username']);
