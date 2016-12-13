@@ -6,7 +6,7 @@ include ("header.php");
          }
 
             .col-md-10{
-                 height: 872px;
+                 height: 300px;
          }
 
 </style>
