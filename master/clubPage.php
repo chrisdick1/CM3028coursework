@@ -26,6 +26,10 @@ $result = $connection->query($sql);?>
 
         <div class="col-lg-12">
             <h2 class="page-header">Go Portlethen Clubs</h2>
+            <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
+            </button>
+
         </div>
 
 
@@ -80,9 +84,9 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }?>
 
-<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
-</button>
+<?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
+<!--    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club-->
+<!--    </button>-->
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
