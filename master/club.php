@@ -48,7 +48,7 @@ $result = $connection->query($sql);?>
                 <!-- Portfolio Item Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 <?php echo $name ;?>
+                        <h1 class="page-header">Thanks for Visiting!
                         </h1>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $result = $connection->query($sql);?>
                     </div>
 
                     <div class="col-md-4">
-                        <h3>Description</h3>
+                        <h3><?php echo $name ?></h3>
                         <p><?php echo $description ?></p>
                         <h3>Contact Details</h3>
                         <ul>
