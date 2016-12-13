@@ -19,7 +19,7 @@ include ("header.php");
 require_once("../includes/db_connection.php");
 echo $_SESSION["username"];
 
-$sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs";
+$sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink FROM Clubs";
 $result = $connection->query($sql);?>
 
 
