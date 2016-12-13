@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
 
        ?>
 
-         <div class="col-md-3 col-sm-6">
+         <div class="col-md-3 col-sm-6" >
 
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
