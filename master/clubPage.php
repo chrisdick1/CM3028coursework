@@ -51,7 +51,7 @@ $result = $connection->query($sql);?>
 
 if ($result->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         $clubid = $row["clubid"];
         $name = $row["clubName"];
         $description = $row["clubDescription"];
@@ -62,33 +62,30 @@ if ($result->num_rows > 0) {
         $bodyLink = $row["bodyLink"];
         $website = $row["website"]
 
-       ?>
+        ?>
 
-         <div class="col-lm-4 col-md-4 col-sm-6" >
+        <div class="col-lm-4 col-md-4 col-sm-6">
 
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive"'>
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
-                    </div>
-                    <div class="panel-body text-center">
-                        <h4><?php echo $name ?></h4>
-                        <p> <?php echo $description ?></p>
-                       <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
-                        <form action="deleteClub.php" method="post">
-                            <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
-                            <input type="submit" value="Delete">
-                        </form>
-                    </div>
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
+                </div>
+                <div class="panel-body text-center">
+                    <h4><?php echo $name ?></h4>
+                    <p> <?php echo $description ?></p>
+                    <?php echo "<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
+                    <form action="deleteClub.php" method="post">
+                        <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
+                        <input type="submit" value="Delete">
+                    </form>
                 </div>
             </div>
+        </div>
         <?php
-    }
-} else {
-    echo "0 results";
-
-}?>
+}
+?>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
