@@ -11,8 +11,10 @@ $profileLink = $_POST["profileLink"];
 $bodyLink = $_POST["bodyLink"];
 $emailAddress = $_POST["emailAddress"];
 $phoneNumber = $_POST["phoneNumber"];
+$website = $_POST["website"];
 
-$stmt = "INSERT INTO Clubs (clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink, clubContact, emailAddress, phoneNumber) VALUE ('$name', '$description', '$clubgenre', '$clubcontact', '$profileLink', '$bodyLink')";
+$stmt = "INSERT INTO Clubs (clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink, clubContact, emailAddress, phoneNumber, website)
+ VALUE ('$name', '$description', '$clubgenre', '$clubcontact', '$profileLink', '$bodyLink', '$emailAddress', '$phoneNumber', '$website')";
 
 
 
