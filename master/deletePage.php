@@ -10,6 +10,6 @@ if (mysqli_query($connection, $stmt)) {
 } else {
     echo "Error: " . $stmt . "<br>" . mysqli_error($connection);
 }
-echo $clubID;
+echo '"echo print" . $clubID';
 //header("Location: clubPage.php");
 ?>
