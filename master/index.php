@@ -69,55 +69,120 @@ if (isset($_POST['btn-login'])) {
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
             crossorigin="anonymous"></script>
 </head>
-
-<div class="row">
-    <div class="col-md-12">
-        <img class="center-block" src="http://placehold.it/1200x300" alt="">
+<body>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Man must explore, and this is exploration at its greatest
+                    </h2>
+                    <h3 class="post-subtitle">
+                        Problems look mighty small from 150 miles up
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                    </h2>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Science has not yet mastered prophecy
+                    </h2>
+                    <h3 class="post-subtitle">
+                        We predict too much for the next year and yet far too little for the next ten.
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Failure is not an option
+                    </h2>
+                    <h3 class="post-subtitle">
+                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
+            </div>
+            <hr>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
-<div class="signin-form">
+<hr>
 
+<!-- Footer -->
+<footer>
     <div class="container">
-
-
-        <form class="form-signin"  method="post" id="login-form">
-
-            <h2 class="form-signin-heading">Sign In.</h2><hr />
-
-            <?php
-            if(isset($msg)){
-                echo $msg;
-            }
-            ?>
-
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email address" name="email" required />
-                <span id="check-e"></span>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
             </div>
-
-            <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" name="password" required />
-            </div>
-
-            <hr />
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-default" name="btn-login" id="btn-login">
-                    <span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In
-                </button>
-
-                <a href="register.php" class="btn btn-default" style="float:right;">Sign UP Here</a>
-
-            </div>
-
-
-
-        </form>
-
+        </div>
     </div>
+</footer>
 
-</div>
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/clean-blog.min.js"></script>
+
+
+
 
 
 </body>
