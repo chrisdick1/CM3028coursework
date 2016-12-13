@@ -22,7 +22,7 @@ session_start();
 
 </div>
 <?php
-$sql = "SELECT eventName, description, date FROM health";
+$sql = "SELECT eventID, eventName, description, date FROM health";
 
 $result = $connection->query($sql);?>
 
