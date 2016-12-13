@@ -72,7 +72,7 @@ if ($result->num_rows > 0) {
                     <div class="panel-body">
                         <h4><?php echo $name ?></h4>
                         <h5> <?php echo $description ?></h5>
-                       <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
+                       <?php echo"<a href = '/master/club.php?id=$clubid' class='close'>Visit</a>" ?>
                         <form action="deleteClub.php" method="post">
                             <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
                             <input type="submit" value="Delete">
