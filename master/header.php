@@ -50,28 +50,38 @@ session_start();
                     <a href="/master/index.php" class="navbar-brand">Go Porthlethen</a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavBar">
+                    //'static buttons to be implemented within every page'
                     <?php
                     echo"<ul class='nav navbar-nav'>";
                     echo"<li><a href='/master/home.php'>Home</a></li>";
                     echo"<li><a href='/master/clubPage.php'>Clubs</a></li>";
                     echo"<li><a href='/master/Health.php'>Health</a></li>";
                     echo"</ul>";
+                    //if session isn't active yet - initialize a login button
                     echo"<ul class='nav navbar-nav navbar-right'>";
                     if (!isset($_SESSION['userSession' ])) {
                         echo "<li><a href='/master/logIn.php'>LogIn</a></li>";
                     }
                     echo"</ul>";
 
+                    //if userSession is ran by a verified contributor add 'Verify' button
+                    if (((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3))){
+                        echo "<ul class='nav navbar=nav navbar-right'>";
+                        echo "<li><a href='/master/verify.php'>Verify</a></li>";
+                        echo"</ul>";
+                    }
 
 
+
+
+                    //setting if function to check for session, if the userSession is active =  initialize the logout button
                     if (isset($_SESSION['userSession' ])) {
-//                        echo"<ul class='nav navbar-nav navbar-right'>";
-//                        echo "<li><a href='/master/admin.php'>Admin</a></li>";
-//                        echo "</ul>";
+//
                         echo"<ul class='nav navbar-nav navbar-right'>";
                         echo "<li><a href='/master/logout.php'>Log Out</a></li>";
                         echo"</ul>";
                     }
+                    //if you are unregistered (userSession unactive) = initialize login button
                     else{
                         echo"<ul class='nav navbar-nav navbar-right'>";
                         echo"<li><a href='/master/register.php'>Register</a></li>";
