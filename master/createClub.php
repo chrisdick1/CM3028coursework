@@ -1,7 +1,7 @@
 <?php
 require_once("../includes/db_connection.php"); 
 
-$_POST[""];
+//$_POST[""];
 
 //strip_tags used to remove script tags
 $name = strip_tags($_POST["name"]);
