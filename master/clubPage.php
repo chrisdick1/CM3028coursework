@@ -73,9 +73,9 @@ if ($result->num_rows > 0) {
                         <h4><?php echo $name ?></h4>
                         <h5> <?php echo $description ?></h5>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
-                        <form action="deleteClub.php" method="post">
+                        <form action="deleteClub.php" method="post" class="close">
                             <input type="hidden" name="clubid" value='<?php echo $clubid; ?>'>
-                            <input type="close" value="Delete">
+                            <input type="submit" value="Delete">
                         </form>
                     </div>
                 </div>
