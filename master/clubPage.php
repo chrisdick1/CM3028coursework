@@ -5,15 +5,20 @@ include ("header.php");
 ?>
 
 </nav>
-<!--<style>-->
-<!--    p {-->
-<!--        width: 250px;-->
-<!--        white-space: nowrap;-->
-<!--        overflow: hidden;-->
-<!--        text-overflow: ellipsis;-->
-<!--    }-->
-<!--</style>-->
 <head>
+<style>
+    .col-lm-4 {
+        height: 500px;
+    }
+    .col-md-4 {
+        height: 500px;
+    }
+    .col-sm-6 {
+        height: 500px;
+    }
+
+</style>
+
     <title>Health</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
