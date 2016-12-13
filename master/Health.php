@@ -3,7 +3,7 @@ require_once("../includes/db_connection.php");
 include ("header.php");
 session_start();
 ?>
-<header class="intro-header" style="background-image: url('img/LOGO.png')">
+<header class="intro-header" style="background-image: url('img/logo.jpg')">
 <!--    <div class="container">-->
 <!--        <div class="row">-->
 <!--            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
