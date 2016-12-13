@@ -73,11 +73,12 @@ if ($result->num_rows > 0) {
 <!--                        //vit button-->
                         <?php echo "<li><a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a></li>" ?>
 <!--                        //pop delete picture if admin session exists-->
+                    </ul>
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
-                    </ul>
+
                     </form>
                         <?php } ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
