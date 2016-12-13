@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
                         <p> <?php echo $description ?></p>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>"?>
                         <form action="deletePage.php" method="post">
-                            <input type="hidden" name="club" value="<?php echo $clubid ; ?>">
+                            <input type="hidden" name="club" value="<?php echo $clubid; ?>">
                             <input type="submit" value="Delete">
                         </form>
                     </div>
