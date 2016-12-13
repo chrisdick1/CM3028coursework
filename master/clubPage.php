@@ -35,13 +35,14 @@ if ($result->num_rows > 0) {
        $clubid = $row["clubid"];
        $clubname = $row["clubname"];
        $clubdescription = $row["clubdescription"];
-       $clubgenre = $row["clubgenre"];
-       $clubcontact = $row["clubcontact"];
+       $profileLink = $row["profileLink"];
+       $bodyLink = $row["bodyLink"];
 
        ?>
 
 
             <div class="col-md-3 col-sm-6">
+                <img id="result_img" src='<?php echo $profileLink; ?> height:"300" width:"400"'>
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
