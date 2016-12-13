@@ -59,6 +59,10 @@ if ($result->num_rows > 0) {
                         <h4><?php echo $name ?></h4>
                         <p> <?php echo $description ?></p>
                        <?php echo"<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>"?>
+                        <form action="deletePage.php" method="post">
+                            <input type="hidden" name="club" value="<?php echo $clubid ; ?>">
+                            <input type="submit" value="Delete">
+                        </form>
                     </div>
                 </div>
             </div>
