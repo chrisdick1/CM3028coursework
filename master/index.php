@@ -16,9 +16,8 @@
 if(!empty($_GET['status'])){ ?>
     <div class="alert alert-success alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>logged out!</strong>
+        <strong>Success!</strong> You now have been logged off from your session.
     </div>
-}
 <?php }?>
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
