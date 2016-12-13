@@ -18,7 +18,7 @@ $result = $connection->query($sql);?>
     require_once("../includes/db_connection.php");
 
 
-    $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact FROM Clubs";
+    $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink FROM Clubs";
     $result = $connection->query($sql);?>
 
     <div class="col-xs-12" id="images">
