@@ -38,14 +38,17 @@ $result = $connection->query($sql);?>
 
 
         <div class="col-lg-12">
-            <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
-            </button>
-            <h2 class="page-header">Go Portlethen Clubs</h2>
 
         </div>
 
+<div class="col-sm-12">
+    <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
 
+        <h2 class="page-header">Go Portlethen Clubs</h2>}
+        <?php } ?>
+    <div class="col-md-6">
+        <span class="pull-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
+        </button></span></div>
 <?php
 
 if ($result->num_rows > 0) {
@@ -82,16 +85,11 @@ if ($result->num_rows > 0) {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         <?php
     }
 } else {
     echo "0 results";
+
 }?>
 
 <?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
