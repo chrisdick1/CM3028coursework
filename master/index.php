@@ -2,7 +2,7 @@
 include ("header.php");
 ?>
 <style>   .col-lg-8{
-                    height: 872px;
+                    height: 300px;
          }
 
             .col-md-10{
