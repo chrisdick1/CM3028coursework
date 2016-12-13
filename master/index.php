@@ -1,5 +1,6 @@
-//some additional css
-<style>   .col-lg-8{
+<!--some additional css-->
+<style>
+    .col-lg-8{
         height: 500px;
     }
 
@@ -12,7 +13,6 @@
     .col-md-12{
         height:25px;
     }
-
 </style>
 <?php include ("header.php"); ?>
 <?php
@@ -96,15 +96,6 @@ if (isset($_POST['btn-login'])) {
 </head>
 <body>
 
-            <!-- Pager -->
-            <ul class="pager">
-                <li class="next">
-                    <a href="#">Older Posts &rarr;</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 
 
 <!-- Footer a-->
