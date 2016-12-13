@@ -16,7 +16,7 @@ $result = $connection->query($sql);?>
     require_once("../includes/db_connection.php");
 
 
-    $sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink FROM clubs";
+    $sql = "SELECT clubid, clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM clubs";
     $result = $connection->query($sql);?>
 
     <div class="col-xs-12" id="images">
@@ -42,10 +42,7 @@ $result = $connection->query($sql);?>
             ?>
 <!--                     <div class="jumbotron">-->
 <!---->
-<!--                        <p>Club Name: --><?php //echo $clubname ?><!--</p>-->
-<!--                        <p>Club Description: --><?php //echo $clubdescription ?><!--</p>-->
-<!--                        <p>Club Genre: --><?php //echo $clubgenre ?><!--</p>-->
-<!--                        <p>Club Contact Information: --><?php //echo $clubcontact ?><!--</p>-->
+
 <!---->
 <!---->
 <!--                    </div>-->
@@ -71,7 +68,7 @@ $result = $connection->query($sql);?>
 
                     <div class="col-md-4">
                         <h3>Club Description</h3>
-                        <p><?php echo $clubdescription ?></p>
+                        <p><?php echo $description ?></p>
                         <h3>Contact Details</h3>
                         <ul>
                             <li>Lorem Ipsum</li>
