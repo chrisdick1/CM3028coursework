@@ -5,12 +5,12 @@ include ("header.php");
 <?php
 session_start();
 require_once("../includes/db_connection.php");
-
+//check session
 if (isset($_SESSION['userSession'])!="") {
-    header("Location: home.php");
+    header("Location: index.php");
     exit;
 }
-
+//login implementation
 if (isset($_POST['btn-login'])) {
 
     $email = strip_tags($_POST['email']);
@@ -23,6 +23,7 @@ if (isset($_POST['btn-login'])) {
     $row=$query->fetch_array();
 
     $count = $query->num_rows; // if email/password are correct returns must be 1 row
+// psw verification
 
     if (password_verify($password, $row['password']) && $count==1) {
         $_SESSION['userSession'] = $row['user_id'];
