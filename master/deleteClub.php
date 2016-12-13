@@ -11,6 +11,7 @@ if (mysqli_query($connection, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($connection);
 }
+echo $clubid;
 
 
 //header("Location: clubPage.php")  ;
