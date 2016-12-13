@@ -85,8 +85,7 @@ if ($result->num_rows > 0) {
                         <input type="submit" value="Delete">
                     </form>
                     </ul>
-
-                    </form>
+<!--                            //insert the picture into card design page-->
                         <?php } ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
