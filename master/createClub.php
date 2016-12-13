@@ -6,14 +6,14 @@ $_POST[""];
 //strip_tags used to remove script tags
 $name = strip_tags($_POST["name"]);
 $description = $_POST["description"];
-$clubContact = $_POST["contact"];
-$emailAddress = $_POST ["email"];
-$phoneNumber = $_POST["number"];
-$profileLink = $_POST["profilePic"];
-$bodyLink = $_POST["bodyPic"];
+$contact = $_POST["contact"];
+$email = $_POST ["email"];
+$number = $_POST["number"];
+$profilePic = $_POST["profilePic"];
+$bodyPic = $_POST["bodyPic"];
 $website = $_POST["website"];
 $stmt = "INSERT INTO Clubs (clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website)
- VALUE ('$name', '$description', '$clubContact',  '$emailAddress', '$phoneNumber', '$profileLink', '$bodyLink', '$website')";
+ VALUE ('$name', '$description', '$contact',  '$email', '$number', '$profilePic', '$bodyPic', '$website')";
 
 
 if (mysqli_query($connection, $stmt)) {

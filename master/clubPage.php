@@ -122,9 +122,10 @@ if ($result->num_rows > 0) {
                     <button type="submit" class="btn btn-default">Submit</button>
 
                 </div>
+            </form>
         </div>
+
         <?php } ?>
-        </form>
     </div>
 </div>
 

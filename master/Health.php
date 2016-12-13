@@ -90,8 +90,9 @@ $result = $connection->query($sql);?>
                     <button type="submit" class="btn btn-default">Submit</button>
 
                 </div>
+            </form>
         </div>
-        </form>
+
     </div>
 </div>
 <?php } ?>
