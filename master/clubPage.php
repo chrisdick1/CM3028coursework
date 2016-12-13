@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
 
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        src="images/screenShot.png" class="img-circle" width="320" height="320">
+
                         <img id="result_img" src='<?php echo $profileLink;?> class="img-responsive"'>
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
