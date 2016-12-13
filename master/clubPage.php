@@ -111,6 +111,9 @@ if ($result->num_rows > 0) {
                         <label for="usr">Body Picture Link</label>
                         <input type="text" class="form-control" name="bodyLink" value="">
 
+                        <label for="usr">Group Website</label>
+                        <input type="text" class="form-control" name="website" value="">
+
                     </div>
                 </div>
                 <div class="modal-footer">
