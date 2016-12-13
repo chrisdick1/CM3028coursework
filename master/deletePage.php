@@ -10,5 +10,4 @@ if (mysqli_query($connection, $sql)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($dbconnect);
 }
 
-//header("Location: clubPage.php");
-?>
+header("Location: clubPage.php");
