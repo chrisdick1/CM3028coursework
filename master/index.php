@@ -1,4 +1,4 @@
-
+//some additional css
 <style>   .col-lg-8{
         height: 500px;
     }
@@ -12,8 +12,9 @@
     .col-md-12{
         height:25px;
     }
-    <?php include ("header.php"); ?>
-</style
+
+</style>
+<?php include ("header.php"); ?>
 <?php
 if(!empty($_GET['status'])){
     echo '<div class=container-fluid';
