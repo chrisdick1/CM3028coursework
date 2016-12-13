@@ -17,12 +17,11 @@ include ("header.php");
 <br>
 <?php
 require_once("../includes/db_connection.php");
-echo $_SESSION["username"];
 
-$sql = "SELECT clubid, clubname, clubdescription, clubgenre, clubcontact, profileLink FROM clubs";
+$sql = "SELECT clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website FROM clubs";
 $result = $connection->query($sql);?>
 
-clubName, clubDescription, clubContact, emailAddress, phoneNumber, profileLink, bodyLink, website
+
         <div class="col-lg-12">
             <h2 class="page-header">Go Portlethen Clubs</h2>
         </div>
@@ -107,7 +106,7 @@ if ($result->num_rows > 0) {
 
                         <label for="usr">Phone Number</label>
                         <input type="text" class="form-control" name="number" value="">
-                        
+
                         <label for="usr">Profile Picture Link</label>
                         <input type="text" class="form-control" name="profilePic" value="">
 
@@ -126,9 +125,9 @@ if ($result->num_rows > 0) {
                     <button type="submit" class="btn btn-default">Submit</button>
 
                 </div>
-            </form>
-        </div>
 
+        </div>
+        </form>
 
 
     </div>
