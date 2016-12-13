@@ -30,8 +30,7 @@ $sql = "SELECT eventID, eventName, description, date FROM health";
 $result = $connection->query($sql);?>
 
 <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
-        Info
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Event
     </button>
  <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
@@ -88,7 +87,7 @@ $result = $connection->query($sql);?>
                     <input type="submit" value="Delete">
                 </form>
 
-                <p>Event: <?php echo $eventName ?></p>
+                <h3>Event: <?php echo $eventName ?></h3>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
             </div>
