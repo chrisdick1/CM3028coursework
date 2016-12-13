@@ -84,7 +84,7 @@ if ($result->num_rows > 0) {
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Make News</h4>
+                <h4 class="modal-title">Create a Club page</h4>
             </div>
             <form action="createClub.php" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
@@ -122,7 +122,7 @@ if ($result->num_rows > 0) {
                     <button type="submit" class="btn btn-default">Submit</button>
 
                 </div>
-            </form>
+
         </div>
 
         <?php } ?>
