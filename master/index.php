@@ -17,7 +17,6 @@
 <?php include ("header.php"); ?>
 <?php
 if(!empty($_GET['status'])){
-    echo '<div class=container-fluid';
     echo '<div class="col-md-12">';
     echo '<div class="alert alert-success">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</Logged out successfully </div>';
@@ -25,7 +24,6 @@ if(!empty($_GET['status'])){
     echo '</div>';
 }
 ?>
->
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
         <div class="row">
