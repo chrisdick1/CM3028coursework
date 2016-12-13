@@ -33,10 +33,13 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
        $clubid = $row["clubid"];
-       $clubname = $row["clubName"];
-       $clubdescription = $row["clubdescription"];
+       $clubName = $row["clubname"];
+       $clubDescription = $row["clubdescription"];
+       $clubContact = $row ["number"];
+        $clubCon = $row ["email"];
        $profileLink = $row["profileLink"];
        $bodyLink = $row["bodyLink"];
+       $website = $row["website"]
 
        ?>
 
