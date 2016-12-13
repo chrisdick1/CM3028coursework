@@ -23,7 +23,7 @@ if(!empty($_GET['status'])){ ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                < class="site-heading">
+
                     <h1>Go Portlethen</h1>
                     <hr class="small">
                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue nec justo dignissim maximus. Etiam eleifend tortor a magna sagittis, nec varius mauris accumsan. Vestibulum
