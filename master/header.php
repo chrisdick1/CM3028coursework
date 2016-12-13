@@ -64,7 +64,7 @@ session_start();
                     //if session isn't active yet - initialize a login button
                     echo"<ul class='nav navbar-nav navbar-right'>";
                     if (!isset($_SESSION['userSession' ])) {
-                        echo "<li><a href='/master/logIn.php'>LogIn</a></li>";
+                        echo "<li><a href='/master/logIn.php'>Log In</a></li>";
                     }
                     echo"</ul>";
 
