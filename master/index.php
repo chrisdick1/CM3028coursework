@@ -13,6 +13,7 @@
 </style>
 <?php include ("header.php"); ?>
 <?php
+//check if directed from logout page, if so, give a logout successful button
 if(!empty($_GET['status'])){ ?>
     <div class="alert alert-success alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -54,7 +55,7 @@ if (isset($_SESSION['userSession'])!="") {
     header("Location: home.php");
     exit;
 }
-
+//login post
 if (isset($_POST['btn-login'])) {
 
     $email = strip_tags($_POST['email']);
