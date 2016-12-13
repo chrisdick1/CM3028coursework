@@ -80,9 +80,7 @@ if ($result->num_rows > 0) {
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
         <!-- Modal content-->
-
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -91,7 +89,6 @@ if ($result->num_rows > 0) {
             <form action="createClub.php" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="form-group">
-
                         <label for="usr">Club Name:</label>
                         <input type="text" class="form-control" name="name" value="">
 
@@ -115,24 +112,17 @@ if ($result->num_rows > 0) {
 
                         <label for="usr">Group Website</label>
                         <input type="text" class="form-control" name="website" value="">
-
                     </div>
                 </div>
-
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close
                     </button>
                     <button type="submit" class="btn btn-default">Submit</button>
-
                 </div>
-
         </div>
         </form>
-
-
     </div>
 </div>
-
-        <?php } ?>
+<?php } ?>
         </body>
         </html>
