@@ -6,7 +6,6 @@ session_start();
 ?>
 
 <div class="jumbotron">
-    <h2>View content editing requests:</h2>
     <h3>Admin Page</h3>
     <h3>Non Verified Users: </h3>
 <?php
