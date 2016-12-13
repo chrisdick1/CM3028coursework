@@ -38,17 +38,15 @@ $result = $connection->query($sql);?>
 
 
         <div class="col-lg-12">
+            <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
+            </button>
+            <h2 class="page-header">Go Portlethen Clubs</h2>}
+            <?php } ?>
 
         </div>
 
-<div class="col-sm-12">
-    <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
 
-        <h2 class="page-header">Go Portlethen Clubs</h2>}
-        <?php } ?>
-    <div class="col-md-6">
-        <span class="pull-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
-        </button></span></div>
 <?php
 
 if ($result->num_rows > 0) {
@@ -92,10 +90,10 @@ if ($result->num_rows > 0) {
 
 }?>
 
-<?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
-<!--    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club-->
-<!--    </button>-->
-
+<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)) { ?>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Club
+    </button>
+<?php } ?>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -142,6 +140,6 @@ if ($result->num_rows > 0) {
         </form>
     </div>
 </div>
-<?php } ?>
+
         </body>
         </html>
