@@ -5,7 +5,6 @@ include ("header.php");
 ?>
 
 </nav>
-<head>
 <style>
     .col-lm-4 {
         max-height: 500px;
@@ -18,6 +17,8 @@ include ("header.php");
     }
 
 </style>
+<head>
+
 
     <title>Health</title>
     <meta charset="utf-8">
@@ -26,7 +27,7 @@ include ("header.php");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<html lang="en">
+<html>
 
 <body>
 <br>
