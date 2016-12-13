@@ -1,10 +1,10 @@
 
 <style>   .col-lg-8{
-        height: 300px;
+        height: 500px;
     }
 
     .col-md-10 {
-        height: 300px;
+        height: 500px;
     }
     h1{
         color:white
