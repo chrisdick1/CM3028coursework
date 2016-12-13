@@ -23,17 +23,18 @@ session_start();
     </div>
 </div>
 
+<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
+        Info
+    </button>
+<?php } ?>
 
 <?php
 $sql = "SELECT eventID, eventName, description, date FROM health";
 
 $result = $connection->query($sql);?>
 
-<?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit
-        Info
-    </button>
-<?php } ?>
+
     <!-- Modal -->
 
     <?php
