@@ -19,7 +19,7 @@
          .navbar {
              border: 0 !important;
          }
-     </style>>
+     </style>
 </head>
 
 
