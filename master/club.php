@@ -80,7 +80,7 @@ $result = $connection->query($sql);?>
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <h3 class="page-header">Related Projects</h3>
+                        <h3 class="page-header">View More</h3>
                     </div>
 
                     <div class="col-sm-3 col-xs-6">
