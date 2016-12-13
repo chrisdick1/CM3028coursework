@@ -79,12 +79,12 @@ if ($result->num_rows > 0) {
                     </ul>
 <!--                    //Load up a card design using clubs table from MySQL-->
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
-                    <ul class="pull pull-right">
+<!--                    <ul class="pull pull-right">-->
                     <form action="deleteClub.php" method="post">
                         <input type="hidden" name="clubid" value=''>
                         <input type="submit" value="Delete">
                     </form>
-                    </ul>
+<!--                    </ul>-->
 <!--                            //insert the picture into card design page-->
                         <?php } ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
