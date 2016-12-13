@@ -96,11 +96,14 @@ if ($result->num_rows > 0) {
                         <label for="usr">Description:</label>
                         <textarea class="form-control" name="description" rows="5" cols="80"></textarea>
 
-                        <label for="usr">Club Genre:</label>
-                        <input type="text" class="form-control" name="clubgenre" value="">
-                        
                         <label for="usr">Contact Info:</label>
-                        <input type="text" class="form-control" name="clubcontact" value="">
+                        <input type="text" class="form-control" name="clubContact" value="">
+
+                        <label for="usr">Email Address</label>
+                        <input type="text" class="form-control" name="emailAddress" value="">
+
+                        <label for="usr">Phone Number</label>
+                        <input type="text" class="form-control" name="phoneNumber" value="">
                         
                         <label for="usr">Profile Pic Link</label>
                         <input type="text" class="form-control" name="profileLink" value="">
