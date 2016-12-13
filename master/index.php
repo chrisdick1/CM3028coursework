@@ -5,7 +5,7 @@ include ("header.php");
 <?php
 /*if you are coming from logout page -> shout this out\*/
 if(!empty($_GET['status'])){
-    echo '<div class="col-md-1 col-md-offset-1 text-center">$';
+    echo '<div class="col-md-1 col-md-offset-1  text-center">$';
     echo '<div class="alert alert-success">You have been logged out!</div>';
     echo '</div>';
 }
