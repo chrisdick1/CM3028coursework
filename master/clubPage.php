@@ -105,10 +105,10 @@ if ($result->num_rows > 0) {
                         <label for="usr">Phone Number</label>
                         <input type="text" class="form-control" name="phoneNumber" value="">
                         
-                        <label for="usr">Profile Pic Link</label>
+                        <label for="usr">Profile Picture Link</label>
                         <input type="text" class="form-control" name="profileLink" value="">
 
-                        <label for="usr">Body Pic Link</label>
+                        <label for="usr">Body Picture Link</label>
                         <input type="text" class="form-control" name="bodyLink" value="">
 
                     </div>

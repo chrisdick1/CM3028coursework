@@ -6,12 +6,13 @@ $_POST[""];
 //strip_tags used to remove script tags
 $name = strip_tags($_POST["name"]);
 $description = $_POST["description"];
-$clubgenre = $_POST["clubgenre"];
-$clubcontact = $_POST["clubcontact"];
+$clubcontact = $_POST["clubContact"];
 $profileLink = $_POST["profileLink"];
 $bodyLink = $_POST["bodyLink"];
+$emailAddress = $_POST["emailAddress"];
+$phoneNumber = $_POST["phoneNumber"];
 
-$stmt = "INSERT INTO Clubs (clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink) VALUE ('$name', '$description', '$clubgenre', '$clubcontact', '$profileLink', '$bodyLink')";
+$stmt = "INSERT INTO Clubs (clubname, clubdescription, clubgenre, clubcontact, profileLink, bodyLink, clubContact, emailAddress, phoneNumber) VALUE ('$name', '$description', '$clubgenre', '$clubcontact', '$profileLink', '$bodyLink')";
 
 
 
