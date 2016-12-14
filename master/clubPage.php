@@ -73,7 +73,7 @@ if ($result->num_rows > 0) {
                         <?php echo "<a href = '/master/club.php?id=$clubid' class='btn btn-success'>Visit</a>" ?>
 <!--                        //pop delete picture if admin session exists-->
                     </ul>
-                    //Load up a card design using clubs table from MySQL
+<!--                    //Load up a card design using clubs table from MySQL-->
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                     <ul class="pull pull-right">
                     <form action="deleteClub.php" method="post">
