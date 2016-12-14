@@ -77,12 +77,12 @@ if ($result->num_rows > 0) {
 <!--                        --><?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
 <!--                    <ul class="pull pull-right">-->
                     <form action="deleteClub.php" method="post">
-                        <input type="hidden" name='clubID' value=''>
+                        <input type="hidden" name='clubID' value='"<?php echo $clubID; ?>">
                         <input type="submit" value="Delete">
                     </form>
-<!--                    </ul>-->
+                    </ul>
 <!--                            //insert the picture into card design page-->
-<!--                        --><?php //} ?>
+                        <?php } ?>
                     <img id="result_img" src='<?php echo $profileLink; ?> class="img-responsive"'>
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 </div>
