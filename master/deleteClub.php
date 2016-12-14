@@ -8,12 +8,11 @@ $sql = "DELETE FROM clubs WHERE clubid = $clubid";
 
 if (mysqli_query($connection, $sql)) {
     echo "New record created successfully";
-    echo $clubid;
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($connection);
 }
 
 
 
-//header("Location: clubPage.php")  ;
+header("Location: clubPage.php")  ;
 ?>"
