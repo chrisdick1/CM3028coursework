@@ -26,7 +26,7 @@ session_start();
 $sql = "SELECT eventID, eventName, description, date FROM health";
 
 $result = $connection->query($sql);?>
-
+<!--//create event if session is running and permission level matches-->
 <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Event
     </button>
@@ -71,7 +71,7 @@ $result = $connection->query($sql);?>
     </div>
 
 
-
+<!--create a jumpbotron div for every created eventID in mysql-->
     <?php
     if ($result->num_rows > 0) {
         // output data of each row
@@ -86,6 +86,7 @@ $result = $connection->query($sql);?>
                 <h3>Event: <?php echo $eventName ?></h3>
                 <p><?php echo $description ?></p>
                 <p>Date <?php echo $date ?></p>
+<!--                delete button, impplying right requirements are met-->
             <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                 <form action="deleteHealth.php" method="post">
                     <input type="hidden" name="eventID" value='<?php echo $eventID; ?>'>

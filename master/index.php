@@ -1,9 +1,5 @@
 <!--some additional css-->
 <style>
-    /*.col-lg-8{*/
-        /*height: 500px;*/
-    /*}*/
-
     .col-md-10 {
         height: 1000px;
     }
@@ -20,11 +16,12 @@ if(!empty($_GET['status'])){ ?>
         <strong>Success!</strong> You now have been logged off from your session.
     </div>
 <?php }?>
+<!--insert full screen picture backroundheader-->
 <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
+<!--a couple ipsum containers with main header-->
                     <h1>Go Portlethen</h1>
                     <hr class="small">
                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue nec justo dignissim maximus. Etiam eleifend tortor a magna sagittis, nec varius mauris accumsan. Vestibulum
@@ -47,12 +44,13 @@ if(!empty($_GET['status'])){ ?>
         </div>
     </div>
 </header>
+//login
 <?php
 session_start();
 require_once("../includes/db_connection.php");
-
+//check session post
 if (isset($_SESSION['userSession'])!="") {
-    header("Location: home.php");
+    header("Location: index.php");
     exit;
 }
 //login post
