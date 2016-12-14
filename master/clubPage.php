@@ -55,7 +55,7 @@ $result = $connection->query($sql);?>
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        $clubid = $row['clubid'];
+        $clubid = $row['clubID'];
         $name = $row["clubName"];
         $description = $row["clubDescription"];
         $contact = $row ["clubContact"];
@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {
 <!--                        --><?php //if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
 <!--                    <ul class="pull pull-right">-->
                     <form action="deleteClub.php" method="post">
-                        <input type="hidden" name='clubid' value=''>
+                        <input type="hidden" name='clubID' value=''>
                         <input type="submit" value="Delete">
                     </form>
 <!--                    </ul>-->
