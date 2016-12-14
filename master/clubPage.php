@@ -77,7 +77,7 @@ if ($result->num_rows > 0) {
                         <?php if ((isset($_SESSION['userSession'])) && ($_SESSION['permissions'] == 3)){?>
                     <ul class="pull pull-right">
                     <form action="deleteClub.php" method="post">
-                        <input type="hidden" name='clubID' value='<?php echo $clubid; ?>'>
+                        <input type="hidden" name='cluboID' value='<?php echo $clubid; ?>'>
                         <input type="submit" value="Delete">
                     </form>
                     </ul>

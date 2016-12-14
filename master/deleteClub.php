@@ -1,14 +1,14 @@
 <?php
 require_once("../includes/db_connection.php");
 
-$clubID = $_POST['clubid'];
+$clubid = $_POST['clubid'];
 
 //sql to delete a group
-$sql = "DELETE FROM clubs WHERE clubid = '.$clubID.'";
+$sql = "DELETE FROM clubs WHERE clubid = '.$clubid.'";
 
 if (mysqli_query($connection, $sql)) {
     echo "New record created successfully";
-    echo "$clubID";
+    echo "$clubid";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($connection);
 }
